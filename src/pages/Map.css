@@ -1,0 +1,141 @@
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.map-filters {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 8px;
+}
+
+.carthage-toggle {
+  padding: 0 16px 8px 16px;
+}
+
+.carthage-toggle ion-button {
+  --border-radius: var(--nauvoo-border-radius);
+  font-size: 0.8rem;
+}
+
+.map-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 1rem;
+}
+
+.map-no-key,
+.map-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.map-no-key-icon {
+  font-size: 4rem;
+  color: var(--nauvoo-gold);
+  margin-bottom: 1rem;
+}
+
+.map-no-key h2,
+.map-error h2 {
+  font-family: var(--nauvoo-font-display);
+  color: var(--nauvoo-river-deep);
+  margin-bottom: 1rem;
+}
+
+.map-no-key p {
+  color: var(--nauvoo-iron-light);
+  margin-bottom: 0.5rem;
+  max-width: 300px;
+}
+
+/* Info window styles */
+.map-info-window {
+  padding: 8px;
+  max-width: 200px;
+}
+
+.map-info-window h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+  color: #2C3E50;
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+}
+
+.info-window-type {
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #A64B4B;
+  margin-bottom: 8px;
+}
+
+.info-window-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.info-window-btn {
+  flex: 1;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-family: 'Crimson Pro', Georgia, serif;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.info-window-btn:hover {
+  opacity: 0.9;
+}
+
+.info-window-btn.details {
+  background: #34495E;
+  color: white;
+}
+
+.info-window-btn.navigate {
+  background: #A64B4B;
+  color: white;
+}
+
+/* Placeholder for when map isn't loaded */
+.map-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(135deg, var(--nauvoo-forest-light) 0%, var(--nauvoo-forest) 100%);
+  color: white;
+}
+
+.map-placeholder p {
+  font-family: var(--nauvoo-font-body);
+}
+
+.map-coords {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}

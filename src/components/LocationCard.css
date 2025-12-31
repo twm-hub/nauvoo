@@ -1,0 +1,38 @@
+.location-card {
+  cursor: pointer;
+  margin: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.location-card:hover {
+  transform: translateY(-4px);
+}
+
+.location-card-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.location-card ion-card-header {
+  padding-bottom: 8px;
+}
+
+.location-card .type-badge {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.location-card-title {
+  font-family: var(--nauvoo-font-display);
+  font-size: 1.1rem;
+  color: var(--nauvoo-river-deep);
+}
+
+.location-card-description {
+  font-family: var(--nauvoo-font-body);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--nauvoo-iron-light);
+  margin: 0;
+}

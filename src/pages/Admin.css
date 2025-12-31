@@ -1,0 +1,101 @@
+.admin-login-prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.admin-login-prompt h2 {
+  font-family: var(--nauvoo-font-display);
+  color: var(--nauvoo-river-deep);
+  margin-bottom: 1rem;
+}
+
+.admin-login-prompt p {
+  color: var(--nauvoo-iron-light);
+  max-width: 300px;
+}
+
+.admin-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.admin-user-card {
+  margin-bottom: 1.5rem;
+}
+
+.admin-user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-label {
+  font-size: 0.8rem;
+  color: var(--nauvoo-iron-light);
+  margin: 0 0 4px 0;
+}
+
+.user-email {
+  font-weight: 600;
+  color: var(--nauvoo-river-deep);
+  margin: 0;
+}
+
+ion-list {
+  background: transparent;
+  margin-bottom: 1.5rem;
+}
+
+ion-list-header ion-label {
+  font-family: var(--nauvoo-font-display);
+  font-size: 1.2rem;
+  color: var(--nauvoo-river-deep);
+}
+
+ion-item {
+  --background: var(--nauvoo-parchment);
+  border-radius: var(--nauvoo-border-radius);
+  margin-bottom: 0.5rem;
+}
+
+.admin-actions {
+  margin-bottom: 2rem;
+}
+
+.admin-actions ion-button {
+  --background: var(--nauvoo-brick);
+  --background-activated: var(--nauvoo-brick-dark);
+}
+
+.admin-help {
+  background: var(--nauvoo-limestone-warm);
+  padding: 1rem;
+  border-radius: var(--nauvoo-border-radius);
+}
+
+.admin-help h4 {
+  font-family: var(--nauvoo-font-display);
+  color: var(--nauvoo-river-deep);
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.admin-help ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.admin-help li {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.admin-help a {
+  color: var(--nauvoo-brick);
+}

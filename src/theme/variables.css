@@ -1,0 +1,235 @@
+/* Historic Nauvoo App - Theme Variables
+   Based on the 1840s Pioneer Aesthetic Style Guide */
+
+/* Google Fonts imported in index.html */
+
+:root {
+  /* === PRIMARY COLORS === */
+  /* Nauvoo Brick - Primary color */
+  --ion-color-primary: #A64B4B;
+  --ion-color-primary-rgb: 166, 75, 75;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #8B3A3A;
+  --ion-color-primary-tint: #C47070;
+
+  /* Mississippi River - Secondary color */
+  --ion-color-secondary: #34495E;
+  --ion-color-secondary-rgb: 52, 73, 94;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #2C3E50;
+  --ion-color-secondary-tint: #5D7B93;
+
+  /* Prairie Gold - Tertiary/Accent */
+  --ion-color-tertiary: #D4A84B;
+  --ion-color-tertiary-rgb: 212, 168, 75;
+  --ion-color-tertiary-contrast: #000000;
+  --ion-color-tertiary-contrast-rgb: 0, 0, 0;
+  --ion-color-tertiary-shade: #B8860B;
+  --ion-color-tertiary-tint: #E8C97A;
+
+  /* Illinois Forest - Success */
+  --ion-color-success: #3D5A4C;
+  --ion-color-success-rgb: 61, 90, 76;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #2D4A3E;
+  --ion-color-success-tint: #5A7A6A;
+
+  /* Warning - Gold */
+  --ion-color-warning: #D4A84B;
+  --ion-color-warning-rgb: 212, 168, 75;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0, 0, 0;
+  --ion-color-warning-shade: #B8860B;
+  --ion-color-warning-tint: #E8C97A;
+
+  /* Danger */
+  --ion-color-danger: #8B3A3A;
+  --ion-color-danger-rgb: 139, 58, 58;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #6d2d2d;
+  --ion-color-danger-tint: #a54d4d;
+
+  /* Temple Limestone - Light/Background */
+  --ion-color-light: #F5F1E8;
+  --ion-color-light-rgb: 245, 241, 232;
+  --ion-color-light-contrast: #3A3A3A;
+  --ion-color-light-contrast-rgb: 58, 58, 58;
+  --ion-color-light-shade: #D4CBBB;
+  --ion-color-light-tint: #FBF7F0;
+
+  /* Medium */
+  --ion-color-medium: #5D7B93;
+  --ion-color-medium-rgb: 93, 123, 147;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #527081;
+  --ion-color-medium-tint: #6d8a9e;
+
+  /* Iron - Dark/Text */
+  --ion-color-dark: #3A3A3A;
+  --ion-color-dark-rgb: 58, 58, 58;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #2a2a2a;
+  --ion-color-dark-tint: #5A5A5A;
+
+  /* === BACKGROUND COLORS === */
+  --ion-background-color: #F5F1E8;
+  --ion-background-color-rgb: 245, 241, 232;
+
+  --ion-text-color: #3A3A3A;
+  --ion-text-color-rgb: 58, 58, 58;
+
+  /* === TYPOGRAPHY === */
+  --ion-font-family: 'Crimson Pro', Georgia, serif;
+
+  /* === CUSTOM NAUVOO VARIABLES === */
+  /* Primary palette */
+  --nauvoo-brick: #A64B4B;
+  --nauvoo-brick-dark: #8B3A3A;
+  --nauvoo-brick-light: #C47070;
+
+  --nauvoo-river: #34495E;
+  --nauvoo-river-deep: #2C3E50;
+  --nauvoo-river-light: #5D7B93;
+
+  --nauvoo-limestone: #F5F1E8;
+  --nauvoo-limestone-warm: #EDE6D6;
+  --nauvoo-limestone-dark: #D4CBBB;
+
+  --nauvoo-gold: #D4A84B;
+  --nauvoo-gold-deep: #B8860B;
+  --nauvoo-gold-light: #E8C97A;
+
+  --nauvoo-forest: #3D5A4C;
+  --nauvoo-forest-deep: #2D4A3E;
+  --nauvoo-forest-light: #5A7A6A;
+
+  --nauvoo-iron: #3A3A3A;
+  --nauvoo-iron-light: #5A5A5A;
+
+  --nauvoo-parchment: #FBF7F0;
+  --nauvoo-parchment-aged: #F0E6D3;
+
+  /* Typography */
+  --nauvoo-font-display: 'Playfair Display', Georgia, serif;
+  --nauvoo-font-body: 'Crimson Pro', Georgia, serif;
+
+  /* Pin colors by location type */
+  --pin-historic-site: #A64B4B;
+  --pin-visitor-amenity: #3D5A4C;
+  --pin-visitors-center: #34495E;
+  --pin-monument: #5D7B93;
+  --pin-historic-temple: #D4A84B;
+  --pin-meetinghouse: #34495E;
+  --pin-wagon-depot: #3D5A4C;
+  --pin-performance: #D4A84B;
+
+  /* Shadows */
+  --nauvoo-shadow-subtle: 0 2px 8px rgba(59, 43, 30, 0.08);
+  --nauvoo-shadow-card: 0 4px 16px rgba(59, 43, 30, 0.12);
+  --nauvoo-shadow-elevated: 0 8px 32px rgba(59, 43, 30, 0.16);
+
+  /* Border radius */
+  --nauvoo-border-radius: 4px;
+
+  /* === CARD STYLING === */
+  --ion-card-background: #FFFFFF;
+
+  /* === TOOLBAR === */
+  --ion-toolbar-background: #2C3E50;
+  --ion-toolbar-color: #F5F1E8;
+
+  /* === TAB BAR === */
+  --ion-tab-bar-background: #FFFFFF;
+  --ion-tab-bar-color: #5A5A5A;
+  --ion-tab-bar-color-selected: #A64B4B;
+}
+
+/* Typography overrides */
+ion-title,
+ion-card-title,
+.nauvoo-headline,
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--nauvoo-font-display);
+}
+
+ion-content,
+ion-item,
+ion-label,
+ion-text,
+p,
+.nauvoo-body {
+  font-family: var(--nauvoo-font-body);
+}
+
+/* Card styling */
+ion-card {
+  border-radius: var(--nauvoo-border-radius);
+  box-shadow: var(--nauvoo-shadow-card);
+}
+
+ion-card:hover {
+  box-shadow: var(--nauvoo-shadow-elevated);
+}
+
+/* Type badge styling */
+.type-badge {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+.type-badge.historic-site {
+  background-color: rgba(166, 75, 75, 0.15);
+  color: var(--nauvoo-brick);
+}
+
+.type-badge.visitor-amenity {
+  background-color: rgba(61, 90, 76, 0.15);
+  color: var(--nauvoo-forest);
+}
+
+.type-badge.visitors-center {
+  background-color: rgba(52, 73, 94, 0.15);
+  color: var(--nauvoo-river);
+}
+
+.type-badge.monument {
+  background-color: rgba(93, 123, 147, 0.15);
+  color: var(--nauvoo-river-light);
+}
+
+.type-badge.historic-temple {
+  background-color: rgba(212, 168, 75, 0.15);
+  color: var(--nauvoo-gold-deep);
+}
+
+.type-badge.meetinghouse {
+  background-color: rgba(52, 73, 94, 0.15);
+  color: var(--nauvoo-river);
+}
+
+.type-badge.wagon-depot {
+  background-color: rgba(61, 90, 76, 0.15);
+  color: var(--nauvoo-forest);
+}
+
+/* iOS overrides */
+.ios {
+  --ion-background-color: #F5F1E8;
+  --ion-text-color: #3A3A3A;
+}
+
+/* Material Design overrides */
+.md {
+  --ion-background-color: #F5F1E8;
+  --ion-text-color: #3A3A3A;
+}

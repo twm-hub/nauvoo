@@ -1,0 +1,353 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Historic Nauvoo//Test Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Historic Nauvoo Events
+X-WR-TIMEZONE:America/Chicago
+
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+X-LIC-LOCATION:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20251230T140000
+DTEND;TZID=America/Chicago:20251230T153000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-001@historicnauvoo.test
+SUMMARY:Pioneer Christmas Celebration
+DESCRIPTION:Join us for a special holiday celebration featuring period music and refreshments in the Cultural Hall. Experience Christmas as the Saints did in the 1840s.
+LOCATION:350 Main St, Nauvoo, IL 62354
+GEO:40.5473917;-91.3917442
+CATEGORIES:Performance,Holiday
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20251230T160000
+DTEND;TZID=America/Chicago:20251230T170000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-002@historicnauvoo.test
+SUMMARY:Blacksmith Demonstration
+DESCRIPTION:Watch skilled craftsmen demonstrate the art of blacksmithing as practiced by the Webb brothers. Learn how essential this trade was for the pioneer exodus.
+LOCATION:Kimball St, Nauvoo, IL 62354
+GEO:40.5438;-91.3928
+CATEGORIES:Demonstration
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20251231T100000
+DTEND;TZID=America/Chicago:20251231T113000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-003@historicnauvoo.test
+SUMMARY:New Year's Eve Morning Tour - Smith Family Sites
+DESCRIPTION:Special guided walking tour of the Smith family properties including the Homestead, Mansion House, and Red Brick Store. Learn about the Prophet's life in Nauvoo.
+LOCATION:865 Water St, Nauvoo, IL 62354
+GEO:40.5407;-91.3888
+CATEGORIES:Tour
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20251231T140000
+DTEND;TZID=America/Chicago:20251231T160000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-004@historicnauvoo.test
+SUMMARY:Rendezvous in Old Nauvoo - Musical Performance
+DESCRIPTION:Ring in the New Year with beloved pioneer hymns and folk songs performed in period costume at the Cultural Hall.
+LOCATION:350 Main St, Nauvoo, IL 62354
+GEO:40.5473917;-91.3917442
+CATEGORIES:Performance,Music
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260101T130000
+DTEND;TZID=America/Chicago:20260101T143000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-005@historicnauvoo.test
+SUMMARY:New Year's Day Open House - Brigham Young Home
+DESCRIPTION:Start the new year by visiting the beautifully restored Brigham Young Home. Missionaries will share stories of the Young family's faith and preparation for the journey west.
+LOCATION:610 Kimball St, Nauvoo, IL 62354
+GEO:40.5443467;-91.3929243
+CATEGORIES:Open House
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260101T150000
+DTEND;TZID=America/Chicago:20260101T163000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-006@historicnauvoo.test
+SUMMARY:Tin Smithing Workshop
+DESCRIPTION:Hands-on demonstration of tin smithing techniques at the Stoddard Tin Shop. See how everyday items were crafted by pioneer artisans.
+LOCATION:Main St, Nauvoo, IL 62354
+GEO:40.5452;-91.3913
+CATEGORIES:Demonstration,Workshop
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260102T110000
+DTEND;TZID=America/Chicago:20260102T120000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-007@historicnauvoo.test
+SUMMARY:Relief Society History Presentation
+DESCRIPTION:Learn about the founding of the Relief Society in March 1842 at this very location. Discover how Sarah Kimball's conversation with Margaret Cook led to an organization that would bless millions.
+LOCATION:Main St, Nauvoo, IL 62354
+GEO:40.5478;-91.3920
+CATEGORIES:Presentation,History
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260102T140000
+DTEND;TZID=America/Chicago:20260102T153000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-008@historicnauvoo.test
+SUMMARY:Wagon Ride Through Historic Nauvoo
+DESCRIPTION:Take a scenic wagon ride through the streets of Nauvoo. Your missionary guide will share stories of the Saints who built this City Beautiful.
+LOCATION:Main St, Nauvoo, IL 62354
+GEO:40.5460;-91.3908
+CATEGORIES:Tour,Family
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260103T100000
+DTEND;TZID=America/Chicago:20260103T113000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-009@historicnauvoo.test
+SUMMARY:Browning Gun Shop - Firearm History
+DESCRIPTION:Explore the fascinating history of Jonathan Browning, whose descendants would become world-famous firearm manufacturers. See demonstrations of 1840s gunsmithing techniques.
+LOCATION:550 Main St, Nauvoo, IL 62354
+GEO:40.5450257;-91.3913748
+CATEGORIES:Demonstration,History
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260103T140000
+DTEND;TZID=America/Chicago:20260103T160000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-010@historicnauvoo.test
+SUMMARY:Songs of Zion - Afternoon Concert
+DESCRIPTION:Enjoy an afternoon of pioneer hymns and folk music performed at the Seventies Hall. This reconstructed building was originally used for worship and instruction.
+LOCATION:Main St, Nauvoo, IL 62354
+GEO:40.5465;-91.3915
+CATEGORIES:Performance,Music
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260104T093000
+DTEND;TZID=America/Chicago:20260104T103000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-011@historicnauvoo.test
+SUMMARY:Sunrise at the Temple
+DESCRIPTION:Gather at the Nauvoo Temple grounds for a special sunrise devotional. Reflect on the sacrifices of the early Saints who built this sacred structure.
+LOCATION:50 N Wells St, Nauvoo, IL 62354
+GEO:40.5500;-91.3847
+CATEGORIES:Devotional
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260104T110000
+DTEND;TZID=America/Chicago:20260104T123000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-012@historicnauvoo.test
+SUMMARY:Pioneer Schoolhouse Experience
+DESCRIPTION:Step back in time and experience education as children did in 1840s Nauvoo. Try your hand at slate writing and learn what subjects pioneer children studied.
+LOCATION:745 Kimball St, Nauvoo, IL 62354
+GEO:40.5444587;-91.3907419
+CATEGORIES:Interactive,Family
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260104T140000
+DTEND;TZID=America/Chicago:20260104T153000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-013@historicnauvoo.test
+SUMMARY:Trail of Hope Walking Tour
+DESCRIPTION:Walk the path the Saints took as they departed Nauvoo in February 1846. End at the Pioneer Memorial overlooking the Mississippi River.
+LOCATION:Parley St, Nauvoo, IL 62354
+GEO:40.5435;-91.3940
+CATEGORIES:Tour,Walking
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260105T100000
+DTEND;TZID=America/Chicago:20260105T113000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-014@historicnauvoo.test
+SUMMARY:Carthage Jail - Remembering the Martyrdom
+DESCRIPTION:A reverent guided tour of Carthage Jail where Joseph and Hyrum Smith were martyred on June 27, 1844. Reservations recommended.
+LOCATION:310 Buchanan St, Carthage, IL 62321
+GEO:40.4152109;-91.1393322
+CATEGORIES:Tour,History
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260105T140000
+DTEND;TZID=America/Chicago:20260105T160000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-015@historicnauvoo.test
+SUMMARY:Family Living Center Demonstrations
+DESCRIPTION:See eight different pioneer crafts demonstrated including candle making, rope making, spinning, and weaving. Great for families!
+LOCATION:Main St, Nauvoo, IL 62354
+GEO:40.5465;-91.3912
+CATEGORIES:Demonstration,Family
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260106T110000
+DTEND;TZID=America/Chicago:20260106T120000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-016@historicnauvoo.test
+SUMMARY:Brickmaking Demonstration
+DESCRIPTION:Learn how the distinctive red bricks of Nauvoo were made. See the process from clay preparation to firing at the Temple Stones Pavilion.
+LOCATION:Wells St, Nauvoo, IL 62354
+GEO:40.5502;-91.3848
+CATEGORIES:Demonstration
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260106T143000
+DTEND;TZID=America/Chicago:20260106T160000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-017@historicnauvoo.test
+SUMMARY:Scovil Bakery - Bread Making Demo
+DESCRIPTION:Watch period-accurate bread baking in a wood-fired oven. Learn about the Scovil family and their contributions to Nauvoo. Samples available!
+LOCATION:Main St, Nauvoo, IL 62354
+GEO:40.5472;-91.3916
+CATEGORIES:Demonstration,Food
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260107T100000
+DTEND;TZID=America/Chicago:20260107T113000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-018@historicnauvoo.test
+SUMMARY:Printing Press Demonstration
+DESCRIPTION:See a working replica of an 1840s printing press at the Taylor Home Print Shop. Learn how the Times and Seasons newspaper was produced.
+LOCATION:Main St, Nauvoo, IL 62354
+GEO:40.5448;-91.3912
+CATEGORIES:Demonstration,History
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260107T140000
+DTEND;TZID=America/Chicago:20260107T153000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-019@historicnauvoo.test
+SUMMARY:Oxen Experience
+DESCRIPTION:Meet a team of oxen and learn about their vital role in pioneer life. Great photo opportunity for families!
+LOCATION:Main St, Nauvoo, IL 62354
+GEO:40.5462;-91.3910
+CATEGORIES:Interactive,Family
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260108T140000
+DTEND;TZID=America/Chicago:20260108T160000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-020@historicnauvoo.test
+SUMMARY:Winter Evening at the Cultural Hall
+DESCRIPTION:Warm up with an evening of storytelling and music at the Cultural Hall. Hot cocoa served afterward.
+LOCATION:350 Main St, Nauvoo, IL 62354
+GEO:40.5473917;-91.3917442
+CATEGORIES:Performance,Music,Family
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260109T110000
+DTEND;TZID=America/Chicago:20260109T123000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-021@historicnauvoo.test
+SUMMARY:Women of Nauvoo - Monument Tour
+DESCRIPTION:Guided tour of the Monument to Women featuring twelve bronze statues celebrating the contributions of women. Learn the stories behind each sculpture.
+LOCATION:Main St, Nauvoo, IL 62354
+GEO:40.5470;-91.3830
+CATEGORIES:Tour
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260110T100000
+DTEND;TZID=America/Chicago:20260110T113000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-022@historicnauvoo.test
+SUMMARY:Midwifery in Pioneer Times
+DESCRIPTION:At the Patty Sessions Home, learn about the vital role of midwives in frontier communities. Patty Sessions delivered hundreds of babies in Nauvoo and on the trail west.
+LOCATION:Kimball St, Nauvoo, IL 62354
+GEO:40.5445;-91.3920
+CATEGORIES:Presentation,History
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260110T140000
+DTEND;TZID=America/Chicago:20260110T160000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-023@historicnauvoo.test
+SUMMARY:Fireside at Parley Fire Pit
+DESCRIPTION:Join us for an evening fireside on the banks of the Mississippi River. Stories, songs, and s'mores as the sun sets over the water.
+LOCATION:Parley St, Nauvoo, IL 62354
+GEO:40.5432;-91.3950
+CATEGORIES:Devotional,Family
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260111T130000
+DTEND;TZID=America/Chicago:20260111T150000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-024@historicnauvoo.test
+SUMMARY:Saturday Matinee - "A Day in Old Nauvoo"
+DESCRIPTION:Live theatrical performance depicting daily life in 1840s Nauvoo. Performed by volunteer cast in period costumes.
+LOCATION:350 Main St, Nauvoo, IL 62354
+GEO:40.5473917;-91.3917442
+CATEGORIES:Performance,Theater
+STATUS:CONFIRMED
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260112T140000
+DTEND;TZID=America/Chicago:20260112T153000
+DTSTAMP:20251230T120000Z
+UID:nauvoo-event-025@historicnauvoo.test
+SUMMARY:Sunday Hymn Sing
+DESCRIPTION:Join voices in singing beloved hymns at the Seventies Hall. Hymnals provided. All are welcome.
+LOCATION:Main St, Nauvoo, IL 62354
+GEO:40.5465;-91.3915
+CATEGORIES:Performance,Music,Devotional
+STATUS:CONFIRMED
+END:VEVENT
+
+END:VCALENDAR

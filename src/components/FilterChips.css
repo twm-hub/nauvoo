@@ -1,0 +1,23 @@
+.filter-chips-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px 16px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.filter-chip {
+  border: 2px solid var(--chip-color);
+  font-size: 0.8rem;
+  font-family: var(--nauvoo-font-body);
+  transition: all 0.2s ease;
+}
+
+.filter-chip.selected {
+  font-weight: 600;
+}
+
+.filter-chip:hover {
+  opacity: 0.9;
+}

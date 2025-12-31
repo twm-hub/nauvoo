@@ -1,0 +1,54 @@
+.login-content {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-header h2 {
+  font-family: var(--nauvoo-font-display);
+  color: var(--nauvoo-river-deep);
+  margin: 0 0 0.5rem 0;
+}
+
+.login-header p {
+  color: var(--nauvoo-iron-light);
+  margin: 0;
+}
+
+.login-input {
+  --background: var(--nauvoo-parchment);
+  border-radius: var(--nauvoo-border-radius);
+  margin-bottom: 1rem;
+}
+
+.login-error {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-error p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.login-button {
+  margin-top: 1rem;
+  --background: var(--nauvoo-brick);
+  --background-activated: var(--nauvoo-brick-dark);
+}
+
+.login-help {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.login-help p {
+  font-size: 0.85rem;
+  max-width: 280px;
+  margin: 0 auto;
+}

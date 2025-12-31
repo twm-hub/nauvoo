@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nauvoo App Style Guide - 1840s Pioneer Aesthetic</title>
+  
+  <!-- Google Fonts - Period-appropriate typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IM+Fell+English:ital@0;1&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      /* === PRIMARY COLOR PALETTE === */
+      /* Nauvoo Brick - The iconic red brick of historic homes */
+      --brick-dark: #8B3A3A;
+      --brick: #A64B4B;
+      --brick-light: #C47070;
+      
+      /* Mississippi River - Waters that bordered Nauvoo */
+      --river-deep: #2C3E50;
+      --river: #34495E;
+      --river-light: #5D7B93;
+      
+      /* Temple Limestone - The white stone of the Nauvoo Temple */
+      --limestone: #F5F1E8;
+      --limestone-warm: #EDE6D6;
+      --limestone-dark: #D4CBBB;
+      
+      /* === SECONDARY COLORS === */
+      /* Prairie Gold - Wheat fields and candlelight */
+      --gold-deep: #B8860B;
+      --gold: #D4A84B;
+      --gold-light: #E8C97A;
+      
+      /* Forest - Illinois woodlands */
+      --forest-deep: #2D4A3E;
+      --forest: #3D5A4C;
+      --forest-light: #5A7A6A;
+      
+      /* Ironwork - Blacksmith trade */
+      --iron: #3A3A3A;
+      --iron-light: #5A5A5A;
+      
+      /* Parchment - Historical documents */
+      --parchment: #FBF7F0;
+      --parchment-aged: #F0E6D3;
+      
+      /* === TYPOGRAPHY === */
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Crimson Pro', 'Libre Baskerville', Georgia, serif;
+      --font-accent: 'IM Fell English', Georgia, serif;
+      
+      /* === SPACING === */
+      --space-xs: 0.25rem;
+      --space-sm: 0.5rem;
+      --space-md: 1rem;
+      --space-lg: 1.5rem;
+      --space-xl: 2rem;
+      --space-2xl: 3rem;
+      
+      /* === EFFECTS === */
+      --shadow-subtle: 0 2px 8px rgba(59, 43, 30, 0.08);
+      --shadow-card: 0 4px 16px rgba(59, 43, 30, 0.12);
+      --shadow-elevated: 0 8px 32px rgba(59, 43, 30, 0.16);
+      --border-radius: 4px;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: var(--font-body);
+      background-color: var(--parchment);
+      color: var(--iron);
+      line-height: 1.7;
+      font-size: 18px;
+    }
+    
+    /* === HEADER === */
+    .header {
+      background: linear-gradient(135deg, var(--river-deep) 0%, var(--river) 100%);
+      color: var(--limestone);
+      padding: var(--space-2xl) var(--space-xl);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.5;
+    }
+    
+    .header h1 {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: var(--space-sm);
+      position: relative;
+      letter-spacing: 0.02em;
+    }
+    
+    .header .subtitle {
+      font-family: var(--font-accent);
+      font-size: 1.3rem;
+      font-style: italic;
+      opacity: 0.9;
+      position: relative;
+    }
+    
+    .header .era {
+      display: inline-block;
+      margin-top: var(--space-lg);
+      padding: var(--space-sm) var(--space-lg);
+      border: 1px solid var(--limestone-dark);
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      position: relative;
+    }
+    
+    /* === MAIN CONTENT === */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: var(--space-2xl) var(--space-lg);
+    }
+    
+    .section {
+      margin-bottom: var(--space-2xl);
+      padding-bottom: var(--space-2xl);
+      border-bottom: 1px solid var(--limestone-dark);
+    }
+    
+    .section:last-child {
+      border-bottom: none;
+    }
+    
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      color: var(--brick-dark);
+      margin-bottom: var(--space-lg);
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+    }
+    
+    .section-title::before {
+      content: '';
+      width: 4px;
+      height: 1.5em;
+      background: var(--gold);
+      display: inline-block;
+    }
+    
+    /* === COLOR SWATCHES === */
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-lg);
+    }
+    
+    .color-group {
+      background: white;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+    }
+    
+    .color-group-title {
+      padding: var(--space-md);
+      font-family: var(--font-display);
+      font-weight: 600;
+      background: var(--limestone-warm);
+      font-size: 0.95rem;
+    }
+    
+    .color-swatch {
+      display: flex;
+      align-items: stretch;
+    }
+    
+    .swatch-color {
+      width: 80px;
+      min-height: 60px;
+    }
+    
+    .swatch-info {
+      padding: var(--space-sm) var(--space-md);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .swatch-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    
+    .swatch-hex {
+      font-family: monospace;
+      font-size: 0.8rem;
+      color: var(--iron-light);
+    }
+    
+    /* === TYPOGRAPHY SAMPLES === */
+    .type-sample {
+      background: white;
+      padding: var(--space-xl);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-card);
+      margin-bottom: var(--space-lg);
+    }
+    
+    .type-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--brick);
+      margin-bottom: var(--space-sm);
+      font-family: var(--font-body);
+      font-weight: 600;
+    }
+    
+    .font-display-sample {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      line-height: 1.2;
+      color: var(--river-deep);
+    }
+    
+    .font-body-sample {
+      font-family: var(--font-body);
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--iron);
+    }
+    
+    .font-accent-sample {
+      font-family: var(--font-accent);
+      font-size: 1.4rem;
+      font-style: italic;
+      color: var(--forest-deep);
+    }
+    
+    .font-meta {
+      margin-top: var(--space-md);
+      padding-top: var(--space-md);
+      border-top: 1px solid var(--limestone-dark);
+      font-size: 0.85rem;
+      color: var(--iron-light);
+    }
+    
+    /* === UI COMPONENTS === */
+    .component-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--space-xl);
+    }
+    
+    /* Buttons */
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      margin-bottom: var(--space-lg);
+    }
+    
+    .btn {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      padding: var(--space-sm) var(--space-lg);
+      border: none;
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      letter-spacing: 0.03em;
+    }
+    
+    .btn-primary {
+      background: var(--brick);
+      color: white;
+    }
+    
+    .btn-primary:hover {
+      background: var(--brick-dark);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-subtle);
+    }
+    
+    .btn-secondary {
+      background: var(--river);
+      color: white;
+    }
+    
+    .btn-secondary:hover {
+      background: var(--river-deep);
+    }
+    
+    .btn-outline {
+      background: transparent;
+      color: var(--brick);
+      border: 2px solid var(--brick);
+    }
+    
+    .btn-outline:hover {
+      background: var(--brick);
+      color: white;
+    }
+    
+    .btn-gold {
+      background: var(--gold);
+      color: var(--iron);
+    }
+    
+    .btn-gold:hover {
+      background: var(--gold-deep);
+      color: white;
+    }
+    
+    /* Cards */
+    .card {
+      background: white;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-elevated);
+    }
+    
+    .card-image {
+      height: 160px;
+      background: linear-gradient(135deg, var(--brick-light) 0%, var(--brick) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: var(--font-accent);
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+    
+    .card-content {
+      padding: var(--space-lg);
+    }
+    
+    .card-title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: var(--river-deep);
+      margin-bottom: var(--space-sm);
+    }
+    
+    .card-type {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--brick);
+      margin-bottom: var(--space-sm);
+    }
+    
+    .card-description {
+      font-size: 0.95rem;
+      color: var(--iron-light);
+      line-height: 1.6;
+    }
+    
+    /* Navigation */
+    .nav-sample {
+      background: var(--river-deep);
+      padding: var(--space-md) var(--space-lg);
+      border-radius: var(--border-radius);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: var(--space-lg);
+    }
+    
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      color: var(--limestone);
+      font-weight: 700;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: var(--space-lg);
+      list-style: none;
+    }
+    
+    .nav-links a {
+      color: var(--limestone-dark);
+      text-decoration: none;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+    
+    /* Map Pin */
+    .pin-samples {
+      display: flex;
+      gap: var(--space-xl);
+      align-items: flex-end;
+      padding: var(--space-xl);
+      background: var(--limestone-warm);
+      border-radius: var(--border-radius);
+    }
+    
+    .map-pin {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-xs);
+    }
+    
+    .pin-icon {
+      width: 32px;
+      height: 42px;
+      position: relative;
+    }
+    
+    .pin-icon svg {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .pin-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    
+    /* === TEXTURE SAMPLES === */
+    .texture-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+    }
+    
+    .texture-sample {
+      height: 120px;
+      border-radius: var(--border-radius);
+      display: flex;
+      align-items: flex-end;
+      padding: var(--space-sm);
+    }
+    
+    .texture-sample span {
+      font-size: 0.75rem;
+      background: rgba(255,255,255,0.9);
+      padding: var(--space-xs) var(--space-sm);
+      border-radius: 2px;
+    }
+    
+    .texture-parchment {
+      background: var(--parchment-aged);
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+    }
+    
+    .texture-brick {
+      background: var(--brick);
+      background-image: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 48px,
+        rgba(0,0,0,0.1) 48px,
+        rgba(0,0,0,0.1) 50px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 23px,
+        rgba(0,0,0,0.1) 23px,
+        rgba(0,0,0,0.1) 25px
+      );
+    }
+    
+    .texture-brick span {
+      color: var(--brick-dark);
+    }
+    
+    .texture-wood {
+      background: linear-gradient(90deg, 
+        #8B7355 0%, #9B8465 10%, #8B7355 20%, 
+        #7B6345 30%, #8B7355 40%, #9B8465 50%,
+        #8B7355 60%, #7B6345 70%, #8B7355 80%,
+        #9B8465 90%, #8B7355 100%
+      );
+    }
+    
+    /* === ICONOGRAPHY === */
+    .icon-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-lg);
+    }
+    
+    .icon-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: var(--space-md);
+      background: white;
+      border-radius: var(--border-radius);
+      min-width: 100px;
+    }
+    
+    .icon-item svg {
+      width: 32px;
+      height: 32px;
+      color: var(--river-deep);
+    }
+    
+    .icon-item span {
+      font-size: 0.75rem;
+      color: var(--iron-light);
+    }
+    
+    /* === DESIGN PRINCIPLES === */
+    .principles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--space-lg);
+    }
+    
+    .principle {
+      background: white;
+      padding: var(--space-lg);
+      border-radius: var(--border-radius);
+      border-left: 4px solid var(--gold);
+    }
+    
+    .principle h4 {
+      font-family: var(--font-display);
+      color: var(--river-deep);
+      margin-bottom: var(--space-sm);
+    }
+    
+    .principle p {
+      font-size: 0.95rem;
+      color: var(--iron-light);
+    }
+    
+    /* === COPY BUTTON === */
+    .copy-value {
+      cursor: pointer;
+      position: relative;
+    }
+    
+    .copy-value:hover::after {
+      content: 'Click to copy';
+      position: absolute;
+      left: 100%;
+      margin-left: 8px;
+      background: var(--iron);
+      color: white;
+      padding: 2px 8px;
+      border-radius: 2px;
+      font-size: 0.7rem;
+      white-space: nowrap;
+    }
+    
+    /* === FOOTER === */
+    .footer {
+      background: var(--river-deep);
+      color: var(--limestone-dark);
+      text-align: center;
+      padding: var(--space-xl);
+      font-family: var(--font-accent);
+      font-style: italic;
+    }
+    
+    /* === APP MOCKUP === */
+    .app-mockup {
+      background: var(--iron);
+      border-radius: 32px;
+      padding: 12px;
+      max-width: 320px;
+      margin: 0 auto;
+      box-shadow: var(--shadow-elevated);
+    }
+    
+    .app-screen {
+      background: var(--parchment);
+      border-radius: 24px;
+      overflow: hidden;
+      height: 580px;
+    }
+    
+    .app-header {
+      background: var(--river-deep);
+      color: var(--limestone);
+      padding: var(--space-lg) var(--space-md);
+      text-align: center;
+    }
+    
+    .app-header h2 {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      margin-bottom: var(--space-xs);
+    }
+    
+    .app-header p {
+      font-size: 0.75rem;
+      opacity: 0.8;
+    }
+    
+    .app-map {
+      height: 200px;
+      background: linear-gradient(135deg, var(--forest-light) 0%, var(--forest) 100%);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .app-map::after {
+      content: 'Map View';
+      color: white;
+      font-family: var(--font-accent);
+      font-style: italic;
+      opacity: 0.7;
+    }
+    
+    .app-content {
+      padding: var(--space-md);
+    }
+    
+    .app-card {
+      background: white;
+      border-radius: var(--border-radius);
+      padding: var(--space-md);
+      margin-bottom: var(--space-md);
+      box-shadow: var(--shadow-subtle);
+    }
+    
+    .app-card-title {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      color: var(--river-deep);
+    }
+    
+    .app-card-meta {
+      font-size: 0.7rem;
+      color: var(--brick);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    
+    .app-nav {
+      display: flex;
+      justify-content: space-around;
+      background: white;
+      padding: var(--space-md);
+      border-top: 1px solid var(--limestone-dark);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    
+    .app-nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      color: var(--iron-light);
+      font-size: 0.65rem;
+    }
+    
+    .app-nav-item.active {
+      color: var(--brick);
+    }
+    
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2rem;
+      }
+      
+      .texture-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .nav-sample {
+        flex-direction: column;
+        gap: var(--space-md);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Historic Nauvoo</h1>
+    <p class="subtitle">App Style Guide</p>
+    <span class="era">Circa 1840 Pioneer Aesthetic</span>
+  </header>
+
+  <main class="container">
+    
+    <!-- DESIGN PRINCIPLES -->
+    <section class="section">
+      <h2 class="section-title">Design Principles</h2>
+      <div class="principles-grid">
+        <div class="principle">
+          <h4>Honest Craftsmanship</h4>
+          <p>Like the trades of 1840s Nauvoo, every element should feel intentionally crafted. No unnecessary decoration—every detail serves a purpose.</p>
+        </div>
+        <div class="principle">
+          <h4>Warm & Welcoming</h4>
+          <p>Pioneer hospitality. The interface should feel like entering a well-kept home, not a cold institution.</p>
+        </div>
+        <div class="principle">
+          <h4>Rooted in Place</h4>
+          <p>Colors and textures drawn directly from Nauvoo: brick homes, limestone temple, Mississippi waters, Illinois prairie.</p>
+        </div>
+        <div class="principle">
+          <h4>Timeless Legibility</h4>
+          <p>Typography inspired by 1840s printing but optimized for modern screens. Elegant serif faces that honor the period.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLOR PALETTE -->
+    <section class="section">
+      <h2 class="section-title">Color Palette</h2>
+      <div class="color-grid">
+        
+        <div class="color-group">
+          <div class="color-group-title">Nauvoo Brick</div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #8B3A3A;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">Brick Dark</span>
+              <span class="swatch-hex copy-value">#8B3A3A</span>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #A64B4B;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">Brick (Primary)</span>
+              <span class="swatch-hex copy-value">#A64B4B</span>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #C47070;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">Brick Light</span>
+              <span class="swatch-hex copy-value">#C47070</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="color-group">
+          <div class="color-group-title">Mississippi River</div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #2C3E50;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">River Deep</span>
+              <span class="swatch-hex copy-value">#2C3E50</span>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #34495E;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">River (Secondary)</span>
+              <span class="swatch-hex copy-value">#34495E</span>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #5D7B93;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">River Light</span>
+              <span class="swatch-hex copy-value">#5D7B93</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="color-group">
+          <div class="color-group-title">Temple Limestone</div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #F5F1E8; border: 1px solid #ddd;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">Limestone</span>
+              <span class="swatch-hex copy-value">#F5F1E8</span>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #EDE6D6;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">Limestone Warm</span>
+              <span class="swatch-hex copy-value">#EDE6D6</span>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #D4CBBB;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">Limestone Dark</span>
+              <span class="swatch-hex copy-value">#D4CBBB</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="color-group">
+          <div class="color-group-title">Prairie Gold</div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #B8860B;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">Gold Deep</span>
+              <span class="swatch-hex copy-value">#B8860B</span>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #D4A84B;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">Gold (Accent)</span>
+              <span class="swatch-hex copy-value">#D4A84B</span>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #E8C97A;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">Gold Light</span>
+              <span class="swatch-hex copy-value">#E8C97A</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="color-group">
+          <div class="color-group-title">Illinois Forest</div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #2D4A3E;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">Forest Deep</span>
+              <span class="swatch-hex copy-value">#2D4A3E</span>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #3D5A4C;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">Forest</span>
+              <span class="swatch-hex copy-value">#3D5A4C</span>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #5A7A6A;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">Forest Light</span>
+              <span class="swatch-hex copy-value">#5A7A6A</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="color-group">
+          <div class="color-group-title">Neutrals</div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #3A3A3A;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">Iron (Text)</span>
+              <span class="swatch-hex copy-value">#3A3A3A</span>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #FBF7F0; border: 1px solid #ddd;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">Parchment (BG)</span>
+              <span class="swatch-hex copy-value">#FBF7F0</span>
+            </div>
+          </div>
+          <div class="color-swatch">
+            <div class="swatch-color" style="background: #F0E6D3;"></div>
+            <div class="swatch-info">
+              <span class="swatch-name">Parchment Aged</span>
+              <span class="swatch-hex copy-value">#F0E6D3</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- TYPOGRAPHY -->
+    <section class="section">
+      <h2 class="section-title">Typography</h2>
+      
+      <div class="type-sample">
+        <p class="type-label">Display / Headlines</p>
+        <p class="font-display-sample">Playfair Display</p>
+        <p class="font-display-sample" style="font-style: italic; font-size: 2rem;">The City Beautiful on the Mississippi</p>
+        <p class="font-meta">
+          <strong>Font:</strong> Playfair Display &nbsp;|&nbsp; 
+          <strong>Weights:</strong> 400, 600, 700 &nbsp;|&nbsp;
+          <strong>Use:</strong> Headlines, titles, location names
+        </p>
+      </div>
+      
+      <div class="type-sample">
+        <p class="type-label">Body Text</p>
+        <p class="font-body-sample">
+          The Red Brick Store was a site of revelation, community gathering, and organizational instruction. On the second floor, the Prophet Joseph Smith followed divine instruction to organize the Female Relief Society of Nauvoo.
+        </p>
+        <p class="font-meta">
+          <strong>Font:</strong> Crimson Pro &nbsp;|&nbsp; 
+          <strong>Weights:</strong> 300, 400, 600 &nbsp;|&nbsp;
+          <strong>Use:</strong> Body copy, descriptions, paragraphs
+        </p>
+      </div>
+      
+      <div class="type-sample">
+        <p class="type-label">Accent / Quotes</p>
+        <p class="font-accent-sample">"After the pattern of the priesthood"</p>
+        <p class="font-meta">
+          <strong>Font:</strong> IM Fell English &nbsp;|&nbsp; 
+          <strong>Style:</strong> Italic &nbsp;|&nbsp;
+          <strong>Use:</strong> Quotes, captions, historical notes
+        </p>
+      </div>
+    </section>
+
+    <!-- UI COMPONENTS -->
+    <section class="section">
+      <h2 class="section-title">UI Components</h2>
+      
+      <h3 style="font-family: var(--font-display); margin-bottom: var(--space-md); color: var(--river);">Buttons</h3>
+      <div class="button-group">
+        <button class="btn btn-primary">Primary Action</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-outline">Outline</button>
+        <button class="btn btn-gold">Highlight</button>
+      </div>
+      
+      <h3 style="font-family: var(--font-display); margin-bottom: var(--space-md); margin-top: var(--space-xl); color: var(--river);">Navigation</h3>
+      <nav class="nav-sample">
+        <div class="nav-logo">Historic Nauvoo</div>
+        <ul class="nav-links">
+          <li><a href="#">Map</a></li>
+          <li><a href="#">Sites</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Tours</a></li>
+        </ul>
+      </nav>
+      
+      <h3 style="font-family: var(--font-display); margin-bottom: var(--space-md); margin-top: var(--space-xl); color: var(--river);">Location Cards</h3>
+      <div class="component-grid">
+        <div class="card">
+          <div class="card-image">Historic Site Image</div>
+          <div class="card-content">
+            <p class="card-type">Historic Site</p>
+            <h4 class="card-title">Red Brick Store</h4>
+            <p class="card-description">Now rebuilt, this building was not only a general store, but also a civic and religious gathering place.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image" style="background: linear-gradient(135deg, var(--forest-light) 0%, var(--forest) 100%);">Visitor Amenity Image</div>
+          <div class="card-content">
+            <p class="card-type" style="color: var(--forest);">Visitor Amenity</p>
+            <h4 class="card-title">Carriage Depot</h4>
+            <p class="card-description">Hear stories about Nauvoo while riding on a horse-drawn carriage through the scenic landscape.</p>
+          </div>
+        </div>
+      </div>
+      
+      <h3 style="font-family: var(--font-display); margin-bottom: var(--space-md); margin-top: var(--space-xl); color: var(--river);">Map Pins</h3>
+      <div class="pin-samples">
+        <div class="map-pin">
+          <div class="pin-icon">
+            <svg viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 9 12 20 12 20s12-11 12-20c0-6.627-5.373-12-12-12z" fill="#A64B4B"/>
+              <circle cx="12" cy="12" r="5" fill="white"/>
+            </svg>
+          </div>
+          <span class="pin-label">Historic Site</span>
+        </div>
+        <div class="map-pin">
+          <div class="pin-icon">
+            <svg viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 9 12 20 12 20s12-11 12-20c0-6.627-5.373-12-12-12z" fill="#3D5A4C"/>
+              <circle cx="12" cy="12" r="5" fill="white"/>
+            </svg>
+          </div>
+          <span class="pin-label">Amenity</span>
+        </div>
+        <div class="map-pin">
+          <div class="pin-icon">
+            <svg viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 9 12 20 12 20s12-11 12-20c0-6.627-5.373-12-12-12z" fill="#D4A84B"/>
+              <circle cx="12" cy="12" r="5" fill="white"/>
+            </svg>
+          </div>
+          <span class="pin-label">Performance</span>
+        </div>
+        <div class="map-pin">
+          <div class="pin-icon">
+            <svg viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 9 12 20 12 20s12-11 12-20c0-6.627-5.373-12-12-12z" fill="#34495E"/>
+              <circle cx="12" cy="12" r="5" fill="white"/>
+            </svg>
+          </div>
+          <span class="pin-label">Visitors' Center</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEXTURES -->
+    <section class="section">
+      <h2 class="section-title">Textures & Backgrounds</h2>
+      <div class="texture-grid">
+        <div class="texture-sample texture-parchment">
+          <span>Parchment / Paper</span>
+        </div>
+        <div class="texture-sample texture-brick">
+          <span>Brick Pattern</span>
+        </div>
+        <div class="texture-sample texture-wood">
+          <span>Wood Grain</span>
+        </div>
+      </div>
+      <p style="margin-top: var(--space-md); font-size: 0.9rem; color: var(--iron-light);">
+        Use textures sparingly—as subtle backgrounds or section dividers. The parchment texture works well for main content areas.
+      </p>
+    </section>
+
+    <!-- APP MOCKUP -->
+    <section class="section">
+      <h2 class="section-title">App Preview</h2>
+      <div class="app-mockup">
+        <div class="app-screen" style="position: relative;">
+          <div class="app-header">
+            <h2>Historic Nauvoo</h2>
+            <p>Explore the City Beautiful</p>
+          </div>
+          <div class="app-map"></div>
+          <div class="app-content">
+            <div class="app-card">
+              <p class="app-card-meta">Historic Site • 0.2 mi</p>
+              <p class="app-card-title">Cultural Hall</p>
+            </div>
+            <div class="app-card">
+              <p class="app-card-meta">Performance Today • 2:00 PM</p>
+              <p class="app-card-title">Outdoor Stage</p>
+            </div>
+          </div>
+          <div class="app-nav">
+            <div class="app-nav-item active">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+              <span>Map</span>
+            </div>
+            <div class="app-nav-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>
+              <span>Sites</span>
+            </div>
+            <div class="app-nav-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+              <span>Events</span>
+            </div>
+            <div class="app-nav-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+              <span>More</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CSS VARIABLES -->
+    <section class="section">
+      <h2 class="section-title">CSS Variables (Copy/Paste)</h2>
+      <div style="background: #1e1e1e; padding: var(--space-lg); border-radius: var(--border-radius); overflow-x: auto;">
+        <pre style="color: #d4d4d4; font-family: 'Monaco', 'Menlo', monospace; font-size: 0.85rem; line-height: 1.6; margin: 0;"><code>:root {
+  <span style="color: #6a9955;">/* Primary Colors */</span>
+  --brick-dark: <span style="color: #ce9178;">#8B3A3A</span>;
+  --brick: <span style="color: #ce9178;">#A64B4B</span>;
+  --brick-light: <span style="color: #ce9178;">#C47070</span>;
+  
+  --river-deep: <span style="color: #ce9178;">#2C3E50</span>;
+  --river: <span style="color: #ce9178;">#34495E</span>;
+  --river-light: <span style="color: #ce9178;">#5D7B93</span>;
+  
+  --limestone: <span style="color: #ce9178;">#F5F1E8</span>;
+  --limestone-warm: <span style="color: #ce9178;">#EDE6D6</span>;
+  --limestone-dark: <span style="color: #ce9178;">#D4CBBB</span>;
+  
+  <span style="color: #6a9955;">/* Accent Colors */</span>
+  --gold-deep: <span style="color: #ce9178;">#B8860B</span>;
+  --gold: <span style="color: #ce9178;">#D4A84B</span>;
+  --gold-light: <span style="color: #ce9178;">#E8C97A</span>;
+  
+  --forest-deep: <span style="color: #ce9178;">#2D4A3E</span>;
+  --forest: <span style="color: #ce9178;">#3D5A4C</span>;
+  --forest-light: <span style="color: #ce9178;">#5A7A6A</span>;
+  
+  <span style="color: #6a9955;">/* Neutrals */</span>
+  --iron: <span style="color: #ce9178;">#3A3A3A</span>;
+  --parchment: <span style="color: #ce9178;">#FBF7F0</span>;
+  
+  <span style="color: #6a9955;">/* Typography */</span>
+  --font-display: <span style="color: #ce9178;">'Playfair Display', Georgia, serif</span>;
+  --font-body: <span style="color: #ce9178;">'Crimson Pro', Georgia, serif</span>;
+  --font-accent: <span style="color: #ce9178;">'IM Fell English', Georgia, serif</span>;
+}</code></pre>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>"The City Beautiful" — Nauvoo, Illinois, 1839–1846</p>
+  </footer>
+
+</body>
+</html>
