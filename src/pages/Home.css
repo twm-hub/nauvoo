@@ -24,6 +24,13 @@
 }
 
 .section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  /* The clock drops to its own line rather than colliding with the heading
+     on narrow phones. */
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
   margin-bottom: 1rem;
 }
 
@@ -32,6 +39,50 @@
   font-size: 1.5rem;
   color: var(--nauvoo-river-deep);
   margin: 0;
+}
+
+/* Collapsed container for events that have already finished */
+.past-events {
+  margin-bottom: 0.5rem;
+}
+
+.past-events-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--nauvoo-limestone-warm);
+  border: none;
+  border-radius: 4px;
+  color: var(--nauvoo-iron-light);
+  font-family: var(--nauvoo-font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.past-events-toggle:hover {
+  background: var(--nauvoo-limestone-dark, #E8E2D4);
+}
+
+.past-events-toggle ion-icon {
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.past-events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.day-all-done {
+  padding: 0.5rem 0.25rem;
+  font-size: 0.9rem;
 }
 
 .events-loading {

@@ -1,18 +1,25 @@
 import { IonCard, IonCardContent, IonIcon, IonText, IonImg } from '@ionic/react';
 import { timeOutline, locationOutline, openOutline } from 'ionicons/icons';
-import { format } from 'date-fns';
 import { CalendarEvent, Location } from '../types';
+import { formatNauvooTime } from '../utils/nauvooTime';
 import './EventCard.css';
 
 interface EventCardProps {
   event: CalendarEvent;
   matchedLocation?: Location | null;
+  /** Already finished — shown dimmed rather than hidden. */
+  isPast?: boolean;
   onClick?: () => void;
 }
 
-const EventCard: React.FC<EventCardProps> = ({ event, matchedLocation, onClick }) => {
-  const startTime = format(event.start, 'h:mm a');
-  const endTime = format(event.end, 'h:mm a');
+const EventCard: React.FC<EventCardProps> = ({
+  event,
+  matchedLocation,
+  isPast = false,
+  onClick,
+}) => {
+  const startTime = formatNauvooTime(event.start);
+  const endTime = formatNauvooTime(event.end);
 
   const handleSiteLink = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -22,7 +29,10 @@ const EventCard: React.FC<EventCardProps> = ({ event, matchedLocation, onClick }
   };
 
   return (
-    <IonCard onClick={onClick} className="event-card">
+    <IonCard
+      onClick={onClick}
+      className={`event-card${isPast ? ' event-card-past' : ''}`}
+    >
       {matchedLocation?.imageUrl && (
         <div className="event-thumbnail">
           <IonImg src={matchedLocation.imageUrl} alt={matchedLocation.name} />

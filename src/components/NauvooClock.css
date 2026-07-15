@@ -1,0 +1,23 @@
+.nauvoo-clock {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  /* Stays right-aligned whether it shares the heading's line (desktop) or
+     wraps onto its own (phones). */
+  margin-left: auto;
+  font-family: var(--nauvoo-font-body);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.nauvoo-clock-label {
+  color: var(--nauvoo-iron-light);
+  font-weight: 400;
+}
+
+.nauvoo-clock-time {
+  color: var(--nauvoo-river-deep);
+  font-weight: 600;
+  /* Keeps the digits from jostling the label as the minutes tick over. */
+  font-variant-numeric: tabular-nums;
+}

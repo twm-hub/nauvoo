@@ -8,6 +8,17 @@
   transform: translateY(-2px);
 }
 
+/* Already finished: recede, but stay legible and still reachable. */
+.event-card-past {
+  opacity: 0.55;
+  filter: saturate(0.4);
+}
+
+.event-card-past .event-time,
+.event-card-past .event-title {
+  color: var(--nauvoo-iron-light);
+}
+
 .event-time {
   display: flex;
   align-items: center;

@@ -1,105 +1,83 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { CalendarEvent } from '../types';
-import { useConfig } from './useConfig';
 import {
   parseICSData,
   filterFutureEvents,
   groupEventsByDate,
 } from '../services/calendarParser';
 
-// Import local test calendar for development
+// Sample data for local development only. Never used in a deployed build:
+// falling back to it in production is what disguised a broken calendar
+// connection as an empty calendar.
 import testCalendarData from '../../nauvoo_test_calendar.ics?raw';
 
+/**
+ * Served by the `calendar` Cloud Function via a hosting rewrite. Outlook
+ * refuses browser requests for the published calendar, so it is relayed
+ * through our own origin instead of fetched directly.
+ */
+const CALENDAR_ENDPOINT = '/api/calendar';
+
 export function useEvents() {
-  const { config, loading: configLoading } = useConfig();
   const [events, setEvents] = useState<CalendarEvent[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [usingSampleData, setUsingSampleData] = useState(false);
 
-  useEffect(() => {
-    async function fetchEvents() {
-      if (configLoading) return;
-
-      try {
-        setLoading(true);
-        setError(null);
-
-        let parsedEvents: CalendarEvent[];
-
-        // Try to fetch from the configured URL
-        if (config.calendarUrl) {
-          try {
-            const response = await fetch(config.calendarUrl);
-            if (response.ok) {
-              const icsData = await response.text();
-              parsedEvents = parseICSData(icsData);
-            } else {
-              throw new Error('Calendar fetch failed');
-            }
-          } catch (fetchError) {
-            console.log('Using local calendar data for development');
-            // Fallback to local test calendar
-            parsedEvents = parseICSData(testCalendarData);
-          }
-        } else {
-          // Use local test calendar
-          parsedEvents = parseICSData(testCalendarData);
-        }
-
-        // Filter to future events and set
-        const futureEvents = filterFutureEvents(parsedEvents);
-        setEvents(futureEvents);
-      } catch (err) {
-        console.error('Error loading events:', err);
-        setError(err instanceof Error ? err.message : 'Failed to load events');
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    fetchEvents();
-  }, [config.calendarUrl, configLoading]);
-
-  // Helper to get events grouped by date
-  const eventsByDate = groupEventsByDate(events);
-
-  // Helper to refresh events
-  const refresh = async () => {
+  const load = useCallback(async () => {
     setLoading(true);
-    try {
-      let parsedEvents: CalendarEvent[];
+    setError(null);
 
-      if (config.calendarUrl) {
-        try {
-          const response = await fetch(config.calendarUrl);
-          if (response.ok) {
-            const icsData = await response.text();
-            parsedEvents = parseICSData(icsData);
-          } else {
-            throw new Error('Calendar fetch failed');
-          }
-        } catch {
-          parsedEvents = parseICSData(testCalendarData);
-        }
-      } else {
-        parsedEvents = parseICSData(testCalendarData);
+    try {
+      const response = await fetch(CALENDAR_ENDPOINT);
+      if (!response.ok) {
+        throw new Error(
+          `Calendar request failed (${response.status} ${response.statusText})`
+        );
       }
 
-      const futureEvents = filterFutureEvents(parsedEvents);
-      setEvents(futureEvents);
-      setError(null);
+      const icsData = await response.text();
+      const parsed = parseICSData(icsData);
+
+      setEvents(filterFutureEvents(parsed));
+      setUsingSampleData(false);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to refresh events');
+      const message =
+        err instanceof Error ? err.message : 'Failed to load events';
+
+      if (import.meta.env.DEV) {
+        console.warn(
+          `[useEvents] ${message}\n` +
+            'Falling back to bundled SAMPLE events. These are not real ' +
+            'Historic Nauvoo events. Run the Firebase emulator to see live data.'
+        );
+        setEvents(filterFutureEvents(parseICSData(testCalendarData)));
+        setUsingSampleData(true);
+        setError(null);
+      } else {
+        console.error('[useEvents] Failed to load calendar:', err);
+        setEvents([]);
+        setUsingSampleData(false);
+        setError(message);
+      }
     } finally {
       setLoading(false);
     }
-  };
+  }, []);
+
+  useEffect(() => {
+    load();
+  }, [load]);
+
+  // Helper to get events grouped by date
+  const eventsByDate = groupEventsByDate(events);
 
   return {
     events,
     eventsByDate,
     loading,
     error,
-    refresh,
+    usingSampleData,
+    refresh: load,
   };
 }

@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import {
   IonContent,
   IonHeader,
@@ -9,30 +9,74 @@ import {
   IonSpinner,
   IonRefresher,
   IonRefresherContent,
+  IonIcon,
   RefresherEventDetail,
 } from '@ionic/react';
-import { format, isToday, isTomorrow, parseISO } from 'date-fns';
+import { chevronDown, chevronForward } from 'ionicons/icons';
+import { format } from 'date-fns';
 import { useEvents } from '../hooks/useEvents';
 import { useLocations } from '../hooks/useLocations';
 import { matchEventToLocation } from '../services/calendarParser';
-import { CalendarEvent, Location } from '../types';
+import { Location } from '../types';
+import {
+  nauvooDateKey,
+  shiftDateKey,
+  dateKeyToDate,
+  hasPassed,
+} from '../utils/nauvooTime';
 import EventCard from '../components/EventCard';
+import NauvooClock from '../components/NauvooClock';
 import './Home.css';
 
+/** How often the list re-checks which events have finished. */
+const PASSED_CHECK_INTERVAL_MS = 30000;
+
 const Home: React.FC = () => {
-  const { events, eventsByDate, loading, error, refresh } = useEvents();
+  const { events, eventsByDate, loading, error, usingSampleData, refresh } =
+    useEvents();
   const { locations } = useLocations();
+
+  // Days whose finished events the visitor has chosen to reveal. Collapsed by
+  // default: by evening most of the day is behind you and only clutters the list.
+  const [expandedDays, setExpandedDays] = useState<Set<string>>(new Set());
+
+  const togglePastEvents = (dateKey: string) => {
+    setExpandedDays((previous) => {
+      const next = new Set(previous);
+      if (next.has(dateKey)) {
+        next.delete(dateKey);
+      } else {
+        next.add(dateKey);
+      }
+      return next;
+    });
+  };
+
+  // Re-checked on a timer so events dim as the day goes by, without a reload.
+  const [now, setNow] = useState(() => new Date());
+
+  useEffect(() => {
+    const id = window.setInterval(
+      () => setNow(new Date()),
+      PASSED_CHECK_INTERVAL_MS
+    );
+    return () => window.clearInterval(id);
+  }, []);
+
+  // "Today" means today in Nauvoo, not on the viewer's device.
+  const todayKey = nauvooDateKey(now);
+  const tomorrowKey = shiftDateKey(todayKey, 1);
 
   // Format date header
   const formatDateHeader = (dateKey: string): string => {
-    const date = parseISO(dateKey);
-    if (isToday(date)) {
-      return 'Today';
+    const dayAndDate = format(dateKeyToDate(dateKey), 'EEEE, MMMM d');
+    if (dateKey === todayKey) {
+      return `Today, ${dayAndDate}`;
     }
-    if (isTomorrow(date)) {
-      return 'Tomorrow';
+    if (dateKey === tomorrowKey) {
+      return `Tomorrow, ${dayAndDate}`;
     }
-    return format(date, 'EEEE, MMMM d');
+    return dayAndDate;
   };
 
   // Get sorted date keys
@@ -87,7 +131,19 @@ const Home: React.FC = () => {
             <IonText>
               <h3>Upcoming Events</h3>
             </IonText>
+            <NauvooClock />
           </div>
+
+          {usingSampleData && (
+            <div className="events-sample-notice ion-padding">
+              <IonText color="warning">
+                <p>
+                  <strong>Sample data.</strong> These are placeholder events,
+                  not the real Historic Nauvoo calendar.
+                </p>
+              </IonText>
+            </div>
+          )}
 
           {loading && (
             <div className="events-loading">
@@ -117,6 +173,14 @@ const Home: React.FC = () => {
             <div className="events-list">
               {sortedDates.map((dateKey) => {
                 const dayEvents = eventsByDate.get(dateKey) || [];
+                const pastEvents = dayEvents.filter((event) =>
+                  hasPassed(event.end, now)
+                );
+                const remainingEvents = dayEvents.filter(
+                  (event) => !hasPassed(event.end, now)
+                );
+                const isExpanded = expandedDays.has(dateKey);
+
                 return (
                   <div key={dateKey} className="events-day">
                     <div className="day-header">
@@ -128,13 +192,52 @@ const Home: React.FC = () => {
                       </span>
                     </div>
                     <div className="day-events">
-                      {dayEvents.map((event) => (
+                      {pastEvents.length > 0 && (
+                        <div className="past-events">
+                          <button
+                            className="past-events-toggle"
+                            onClick={() => togglePastEvents(dateKey)}
+                            aria-expanded={isExpanded}
+                          >
+                            <IonIcon
+                              icon={isExpanded ? chevronDown : chevronForward}
+                            />
+                            <span>
+                              {pastEvents.length} earlier event
+                              {pastEvents.length !== 1 ? 's' : ''}
+                            </span>
+                          </button>
+
+                          {isExpanded && (
+                            <div className="past-events-list">
+                              {pastEvents.map((event) => (
+                                <EventCard
+                                  key={event.uid}
+                                  event={event}
+                                  matchedLocation={eventLocationMap.get(event.uid)}
+                                  isPast
+                                />
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      )}
+
+                      {remainingEvents.map((event) => (
                         <EventCard
                           key={event.uid}
                           event={event}
                           matchedLocation={eventLocationMap.get(event.uid)}
                         />
                       ))}
+
+                      {remainingEvents.length === 0 && (
+                        <div className="day-all-done">
+                          <IonText color="medium">
+                            <p>Everything for today has finished.</p>
+                          </IonText>
+                        </div>
+                      )}
                     </div>
                   </div>
                 );
