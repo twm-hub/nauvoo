@@ -93,27 +93,107 @@
   object-fit: cover;
 }
 
-/* Site link button */
-.event-site-link {
+/* Expanded, the photo is shown whole rather than cropped to a strip. */
+.event-thumbnail-full {
+  height: auto;
+  max-height: 60vh;
+}
+
+.event-thumbnail-full ion-img {
+  height: auto;
+  object-fit: contain;
+}
+
+/* Expanded card */
+.event-expand-chevron {
+  margin-left: auto;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+.event-card-expanded {
+  cursor: default;
+}
+
+.event-expanded {
+  margin-top: 0.5rem;
+}
+
+.event-description-full {
+  font-family: var(--nauvoo-font-body);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.event-description-paragraph {
+  margin: 0 0 0.75rem 0;
+}
+
+.event-description-full a {
+  color: var(--nauvoo-brick);
+  text-decoration: underline;
+}
+
+.event-place {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--nauvoo-limestone-warm);
+}
+
+.event-place-name {
+  font-family: var(--nauvoo-font-display);
+  font-size: 1rem;
+  color: var(--nauvoo-river-deep);
+  margin: 0 0 2px 0;
+}
+
+.event-place-address {
+  font-size: 0.85rem;
+  color: var(--nauvoo-iron-light);
+  margin: 0 0 0.75rem 0;
+}
+
+.event-map {
+  margin-bottom: 0.75rem;
+}
+
+.event-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.event-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  margin-top: 12px;
-  padding: 8px 14px;
-  background: var(--nauvoo-brick);
-  color: white;
-  border: none;
+  padding: 9px 14px;
+  background: transparent;
+  color: var(--nauvoo-brick);
+  border: 1px solid var(--nauvoo-brick);
   border-radius: 4px;
+  font-family: var(--nauvoo-font-body);
   font-size: 0.85rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
-.event-site-link:hover {
+.event-btn:hover {
+  background: var(--nauvoo-limestone-warm);
+}
+
+.event-btn-primary {
+  background: var(--nauvoo-brick);
+  color: white;
+}
+
+.event-btn-primary:hover {
   background: var(--nauvoo-brick-dark, #8B3A3A);
+  color: white;
 }
 
-.event-site-link ion-icon {
+.event-btn ion-icon {
   font-size: 1rem;
 }
+

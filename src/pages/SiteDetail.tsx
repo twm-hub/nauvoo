@@ -15,78 +15,12 @@ import {
   IonCardContent,
 } from '@ionic/react';
 import { useParams } from 'react-router-dom';
-import { GoogleMap, useJsApiLoader, MarkerF } from '@react-google-maps/api';
 import { navigateOutline, openOutline, locationOutline } from 'ionicons/icons';
 import { useLocation } from '../hooks/useLocations';
 import { useConfig } from '../hooks/useConfig';
-import { getTypeBadgeClass, PIN_COLORS, LocationType } from '../types';
+import { getTypeBadgeClass } from '../types';
+import MiniMap from '../components/MiniMap';
 import './SiteDetail.css';
-
-// Mini map component - only renders when API key is available
-interface MiniMapProps {
-  apiKey: string;
-  lat: number;
-  lng: number;
-  type: LocationType;
-}
-
-const MiniMap: React.FC<MiniMapProps> = ({ apiKey, lat, lng, type }) => {
-  const { isLoaded, loadError } = useJsApiLoader({
-    id: 'google-map-script',
-    googleMapsApiKey: apiKey,
-  });
-
-  const getMarkerColorName = (locType: LocationType): string => {
-    switch (locType) {
-      case 'Historic Site': return 'red';
-      case 'Visitor Amenity': return 'green';
-      case 'Visitors\' Center': return 'blue';
-      case 'Monument': return 'purple';
-      case 'Historic Temple': return 'yellow';
-      case 'Meetinghouse': return 'blue';
-      case 'Wagon Depot': return 'green';
-      default: return 'red';
-    }
-  };
-
-  if (loadError) {
-    return (
-      <div className="mini-map-placeholder">
-        <IonText color="medium">
-          <p>Map unavailable</p>
-        </IonText>
-      </div>
-    );
-  }
-
-  if (!isLoaded) {
-    return (
-      <div className="mini-map-placeholder">
-        <IonSpinner name="crescent" />
-      </div>
-    );
-  }
-
-  return (
-    <GoogleMap
-      mapContainerStyle={{ width: '100%', height: '150px', borderRadius: '4px' }}
-      center={{ lat, lng }}
-      zoom={16}
-      options={{
-        disableDefaultUI: true,
-        zoomControl: false,
-        mapTypeControl: false,
-        streetViewControl: false,
-        fullscreenControl: false,
-      }}
-    >
-      <MarkerF
-        position={{ lat, lng }}
-        icon={`https://maps.google.com/mapfiles/ms/icons/${getMarkerColorName(type)}-dot.png`}
-      />
-    </GoogleMap>
-  );
-};
 
 const SiteDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -218,6 +152,8 @@ const SiteDetail: React.FC = () => {
                   lat={location.lat}
                   lng={location.lng}
                   type={location.type}
+                  height="220px"
+                  interactive
                 />
               ) : (
                 <div className="mini-map-placeholder">
