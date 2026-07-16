@@ -644,26 +644,39 @@
       "address": "155 N Wells St, Nauvoo, IL 62354",
       "lat": 40.55147704009174,
       "lng": -91.38542237242872,
-      "imageUrl": "https://www.churchofjesuschrist.org/imgs/1qd9y28qzy9m6b1gh0tvxo8pnvoe5ctayytbh25z/full/!800,600/0/default",
+      "imageUrl": "/Nauvoo-Visitors-Center.webp",
       "detailUrl": "https://www.churchofjesuschrist.org/learn/locations/nauvoo-temple-visitors-center?lang=eng",
       "hasPerformances": false
+    },
+    {
+      "id": 55,
+      "name": "Main and Kimball Corner",
+      "type": "Visitor Amenity",
+      "description": "An open gathering place beneath a large shade tree on the northeast corner of Main and Kimball streets, with benches set out for short outdoor performances.",
+      "address": "Main St & Kimball St, Nauvoo, IL 62354",
+      "lat": 40.54433823574556,
+      "lng": -91.39147319173436,
+      "imageUrl": "/Main-Kimball-Tree.webp",
+      "detailUrl": "",
+      "hasPerformances": true
     }
   ],
   "metadata": {
-    "totalLocations": 54,
+    "totalLocations": 55,
     "calendarUrl": "https://outlook.office365.com/owa/calendar/e1072ff8b6314555800f5ff3801ab01a@ChurchofJesusChrist.org/efc593fd79ec4f2992b427f607f27f5014300507637458081173/calendar.ics",
     "types": {
       "Historic Site": 30,
       "Historic Temple": 1,
       "Meetinghouse": 1,
       "Monument": 2,
-      "Visitor Amenity": 15,
+      "Visitor Amenity": 16,
       "Visitors' Center": 4,
       "Wagon Depot": 1
     },
     "performanceVenues": [
       "Cultural Hall",
       "Family Living Center",
+      "Main and Kimball Corner",
       "Outdoor Stage",
       "Pageant Stage Area",
       "Seventies Hall"

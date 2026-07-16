@@ -1,6 +1,7 @@
 import ICAL from 'ical.js';
 import { CalendarEvent } from '../types';
 import { nauvooDateKey } from '../utils/nauvooTime';
+import { LOCATION_ALIASES } from './locationAliases';
 
 /** How many days ahead repeating events are expanded into individual occurrences. */
 const DEFAULT_EXPANSION_DAYS = 30;
@@ -308,15 +309,63 @@ function toRad(deg: number): number {
 }
 
 /**
- * Match an event to a location by GPS proximity or name matching
+ * Fold the curly quotes, casing and spacing differences between how the
+ * calendar writes a place and how our records spell it.
+ */
+function normalizeForMatching(text: string): string {
+  return text
+    .replace(/[‘’ʼ]/g, "'")
+    .replace(/[“”]/g, '"')
+    .toLowerCase()
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function escapeRegExp(text: string): string {
+  return text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+/**
+ * Where in `haystack` does `phrase` first appear as whole words? -1 if never.
+ *
+ * Whole words matter: "Outdoor Stage" must not be found inside some longer word,
+ * and a bare "St" must never match "Stoddard".
+ */
+function firstWholeWordIndex(haystack: string, phrase: string): number {
+  const match = new RegExp(`(?<![a-z0-9])${escapeRegExp(phrase)}(?![a-z0-9])`).exec(
+    haystack
+  );
+  return match ? match.index : -1;
+}
+
+/**
+ * Work out which of our sites an event is being held at.
+ *
+ * The calendar gives us nothing but a sentence written for visitors, so the
+ * place has to be read out of the words. Three rules, in order:
+ *
+ *   1. GPS, if the feed ever starts supplying it (today's never does).
+ *   2. The event's title, when it is itself the name of a site. "Trail of Hope"
+ *      is the trail, even though its text says to gather at the Seventies Hall.
+ *   3. The first site named in the description. First matters: a description
+ *      like "behind the Kimball Home ... may be moved to the Cultural Hall"
+ *      names the real venue before the wet-weather fallback.
+ *
+ * When no known site is named, this returns null and the event shows without a
+ * photo. That is deliberate. The previous version matched any shared word over
+ * three letters, so "Nauvoo" -- which appears in nearly every description --
+ * pinned nine unrelated events to the North Visitors' Center. A missing photo
+ * is honest; a confident wrong one is not.
  */
 export function matchEventToLocation<T extends { name: string; lat: number; lng: number }>(
   event: CalendarEvent,
   locations: T[],
   radiusKm: number = 0.5
 ): T | null {
-  // First try GPS matching if event has geo coordinates
+  // 1. GPS, when the feed provides it.
   if (event.geo) {
+    let closest: T | null = null;
+    let closestDistance = Infinity;
     for (const location of locations) {
       const distance = getDistanceKm(
         event.geo.lat,
@@ -324,37 +373,52 @@ export function matchEventToLocation<T extends { name: string; lat: number; lng:
         location.lat,
         location.lng
       );
-      if (distance <= radiusKm) {
-        return location;
+      if (distance <= radiusKm && distance < closestDistance) {
+        closest = location;
+        closestDistance = distance;
+      }
+    }
+    if (closest) return closest;
+  }
+
+  const byName = new Map<string, T>();
+  locations.forEach((location) =>
+    byName.set(normalizeForMatching(location.name), location)
+  );
+
+  // 2. The title is itself a site name.
+  const title = normalizeForMatching(event.summary || '');
+  const titleMatch = byName.get(title);
+  if (titleMatch) return titleMatch;
+
+  if (!event.location) return null;
+  const haystack = normalizeForMatching(event.location);
+
+  // 3. The first site named in the description. Every site is searched for under
+  // its own name and any alias; on a tie the longer phrase wins, so "Historic
+  // Nauvoo South Visitors' Center" beats a bare "visitors' center".
+  let best: T | null = null;
+  let bestIndex = Infinity;
+  let bestLength = 0;
+
+  for (const location of locations) {
+    const phrases = [
+      normalizeForMatching(location.name),
+      ...(LOCATION_ALIASES[location.name] ?? []).map(normalizeForMatching),
+    ];
+
+    for (const phrase of phrases) {
+      if (!phrase) continue;
+      const index = firstWholeWordIndex(haystack, phrase);
+      if (index === -1) continue;
+
+      if (index < bestIndex || (index === bestIndex && phrase.length > bestLength)) {
+        best = location;
+        bestIndex = index;
+        bestLength = phrase.length;
       }
     }
   }
 
-  // Fall back to name matching
-  if (event.location) {
-    const eventLocationLower = event.location.toLowerCase();
-
-    // Try exact match first
-    for (const location of locations) {
-      if (eventLocationLower.includes(location.name.toLowerCase()) ||
-          location.name.toLowerCase().includes(eventLocationLower)) {
-        return location;
-      }
-    }
-
-    // Try partial match (first significant word)
-    const eventWords = eventLocationLower.split(/[\s,]+/).filter(w => w.length > 3);
-    for (const location of locations) {
-      const locationWords = location.name.toLowerCase().split(/[\s,]+/).filter(w => w.length > 3);
-      for (const eventWord of eventWords) {
-        for (const locationWord of locationWords) {
-          if (eventWord === locationWord) {
-            return location;
-          }
-        }
-      }
-    }
-  }
-
-  return null;
+  return best;
 }
