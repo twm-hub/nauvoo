@@ -20,7 +20,9 @@ import FilterChips from '../components/FilterChips';
 import './Map.css';
 
 // Map configuration
-const MAP_CENTER = { lat: 40.546, lng: -91.385 };
+// Centroid of the Nauvoo sites (Carthage sits ~30 km away and is reached by
+// its own markers). Recomputed after the location coordinates were corrected.
+const MAP_CENTER = { lat: 40.5472, lng: -91.3901 };
 const DEFAULT_ZOOM = 15;
 
 const containerStyle = {

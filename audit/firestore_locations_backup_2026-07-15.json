@@ -1,0 +1,1965 @@
+{
+  "documents": [
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/1",
+      "fields": {
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/4b672c9b2fd96369b3bf6a22734184625ad133e8/full/!800,600/0/default"
+        },
+        "address": {
+          "stringValue": "610 Kimball St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/young-home?lang=eng"
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "description": {
+          "stringValue": "Learn more about the life of the Young family in Nauvoo and Brigham's leadership as the Saints prepared to leave for the west."
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "lng": {
+          "doubleValue": -91.383754
+        },
+        "name": {
+          "stringValue": "Brigham and Mary Ann Young Home"
+        },
+        "id": {
+          "integerValue": "1"
+        },
+        "lat": {
+          "doubleValue": 40.546083
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/10",
+      "fields": {
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/44bc84ae2fa811ed9f7ceeeeac1ec9867dc8ce8d/full/!800,600/0/default"
+        },
+        "address": {
+          "stringValue": "455 Main St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/family-living-center?lang=eng"
+        },
+        "type": {
+          "stringValue": "Visitor Amenity"
+        },
+        "description": {
+          "stringValue": "This large demonstration building showcases eight different arts and crafts from the early days of Nauvoo."
+        },
+        "hasPerformances": {
+          "booleanValue": true
+        },
+        "lng": {
+          "doubleValue": -91.384
+        },
+        "lat": {
+          "doubleValue": 40.547
+        },
+        "name": {
+          "stringValue": "Family Living Center"
+        },
+        "id": {
+          "integerValue": "10"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/11",
+      "fields": {
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/49545c4b2fa811ed9eb3eeeeac1eb508f5ae913e/full/!800,600/0/default"
+        },
+        "detailUrl": {
+          "stringValue": "https://locations.familysearch.org/en/us/il/nauvoo/1195-knight-street"
+        },
+        "address": {
+          "stringValue": "1195 Knight St, Nauvoo, IL 62354"
+        },
+        "lat": {
+          "doubleValue": 40.5456
+        },
+        "lng": {
+          "doubleValue": -91.38
+        },
+        "id": {
+          "integerValue": "11"
+        },
+        "name": {
+          "stringValue": "FamilySearch Center"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "type": {
+          "stringValue": "Visitor Amenity"
+        },
+        "description": {
+          "stringValue": "Visitors can research their ancestors inside the historic Hiram Clark store."
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/12",
+      "fields": {
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "description": {
+          "stringValue": "Hear the story of Heber and Vilate Kimball who followed prophetic leadership even when it was challenging."
+        },
+        "name": {
+          "stringValue": "Heber and Vilate Kimball Home"
+        },
+        "lng": {
+          "doubleValue": -91.387
+        },
+        "id": {
+          "integerValue": "12"
+        },
+        "lat": {
+          "doubleValue": 40.551
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/01eb09362ecc11edab15eeeeac1e47f25ac5cafd/full/!800,600/0/default"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/heber-kimball-home?lang=eng"
+        },
+        "address": {
+          "stringValue": "995 Munson St, Nauvoo, IL 62354"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/13",
+      "fields": {
+        "lng": {
+          "doubleValue": -91.383
+        },
+        "name": {
+          "stringValue": "Hiram and Sarah Granger Kimball Home"
+        },
+        "id": {
+          "integerValue": "13"
+        },
+        "lat": {
+          "doubleValue": 40.55
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "description": {
+          "stringValue": "An important conversation in the Hiram and Sarah Granger Kimball Home in Nauvoo led to the birth of the all-female group known as the Relief Society."
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/52965b072fa811edbe4ceeeeac1e13fe70363be9/full/!800,600/0/default"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/sarah-kimball-home?lang=eng"
+        },
+        "address": {
+          "stringValue": "Commerce Street, Nauvoo, IL 62354"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/14",
+      "fields": {
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/e0894a43f9a411eda8f5eeeeac1ef1f0e2b931fa/full/!800,600/0/default"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/historic-nauvoo-visitors-center?lang=eng"
+        },
+        "address": {
+          "stringValue": "Main St, Nauvoo, IL 62354"
+        },
+        "type": {
+          "stringValue": "Visitors' Center"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "description": {
+          "stringValue": "The visitors' center has orientation services, visitor amenities, an exhibit, two theaters and administrative offices."
+        },
+        "id": {
+          "integerValue": "14"
+        },
+        "name": {
+          "stringValue": "Historic Nauvoo North Visitors' Center"
+        },
+        "lat": {
+          "doubleValue": 40.5475
+        },
+        "lng": {
+          "doubleValue": -91.3825
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/15",
+      "fields": {
+        "lng": {
+          "doubleValue": -91.387
+        },
+        "lat": {
+          "doubleValue": 40.542
+        },
+        "name": {
+          "stringValue": "Historic Nauvoo South Visitors' Center"
+        },
+        "id": {
+          "integerValue": "15"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "type": {
+          "stringValue": "Visitors' Center"
+        },
+        "description": {
+          "stringValue": "The visitors' center has orientation services, visitor amenities, an exhibit, a theater, and administrative offices."
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/dfa6ef84347911ed841beeeeac1e0806efc68ce7/full/!800,600/0/default"
+        },
+        "address": {
+          "stringValue": "Young St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/historic-nauvoo-south-visitors-center?lang=eng"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/16",
+      "fields": {
+        "type": {
+          "stringValue": "Visitor Amenity"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "description": {
+          "stringValue": "Hold a group gathering in the barn near the home of Hiram and Sarah Granger Kimball."
+        },
+        "lng": {
+          "doubleValue": -91.383
+        },
+        "lat": {
+          "doubleValue": 40.55
+        },
+        "id": {
+          "integerValue": "16"
+        },
+        "name": {
+          "stringValue": "Kimball Barn"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/1f2ee6261ce111ed891ceeeeac1e0bea01d2787d/full/!800,600/0/default"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/kimball-barn?lang=eng"
+        },
+        "address": {
+          "stringValue": "Commerce St, Nauvoo, IL 62354"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/17",
+      "fields": {
+        "address": {
+          "stringValue": "620 S Hyde St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/lucy-mack-smith-home?lang=eng"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/4cb0588d2fa811ed8dfeeeeeac1e2ed9248a8f21/full/!800,600/0/default"
+        },
+        "name": {
+          "stringValue": "Lucy Mack Smith Home"
+        },
+        "id": {
+          "integerValue": "17"
+        },
+        "lat": {
+          "doubleValue": 40.543
+        },
+        "lng": {
+          "doubleValue": -91.385
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "description": {
+          "stringValue": "In the Lucy Mack Smith Home, you will hear the story of a faithful woman who supported her son's calling as a prophet."
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/18",
+      "fields": {
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "description": {
+          "stringValue": "Learn about shopping and trade in Historic Nauvoo at the Lyon Drug Store, one of Nauvoo's largest dry goods stores."
+        },
+        "id": {
+          "integerValue": "18"
+        },
+        "name": {
+          "stringValue": "Lyon Drug Store"
+        },
+        "lat": {
+          "doubleValue": 40.5456
+        },
+        "lng": {
+          "doubleValue": -91.387
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/44bcabbb2fa811ed8399eeeeac1e8f4a630f9a0e/full/!800,600/0/default"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/lyon-drug-store?lang=eng"
+        },
+        "address": {
+          "stringValue": "750 Hotchkiss St, Nauvoo, IL 62354"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/19",
+      "fields": {
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/eddf87b8347911edb393eeeeac1e79777144185c/full/!800,600/0/default"
+        },
+        "address": {
+          "stringValue": "Water St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/mansion-house?lang=eng"
+        },
+        "lat": {
+          "doubleValue": 40.5408
+        },
+        "lng": {
+          "doubleValue": -91.389
+        },
+        "name": {
+          "stringValue": "Mansion House"
+        },
+        "id": {
+          "integerValue": "19"
+        },
+        "description": {
+          "stringValue": "The second home of Joseph and Emma Smith in Nauvoo. This house also served as a hotel for guests."
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/2",
+      "fields": {
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/browning-gun-shop?lang=eng"
+        },
+        "address": {
+          "stringValue": "550 Main St, Nauvoo, IL 62354"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/37e8b844848aa6584085822b0167354873962b83/full/!800,600/0/default"
+        },
+        "name": {
+          "stringValue": "Browning Gun Shop"
+        },
+        "id": {
+          "integerValue": "2"
+        },
+        "lng": {
+          "doubleValue": -91.3842
+        },
+        "lat": {
+          "doubleValue": 40.5468
+        },
+        "description": {
+          "stringValue": "Jonathan Browning was an expert gunsmith who applied his trade and taught his family the gospel."
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/20",
+      "fields": {
+        "address": {
+          "stringValue": "Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/monument-to-women?lang=eng"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/e0c2a9c4f9a411edb073eeeeac1e7082d3094014/full/!800,600/0/default"
+        },
+        "lat": {
+          "doubleValue": 40.547
+        },
+        "lng": {
+          "doubleValue": -91.383
+        },
+        "id": {
+          "integerValue": "20"
+        },
+        "name": {
+          "stringValue": "Monument to Women"
+        },
+        "type": {
+          "stringValue": "Monument"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "description": {
+          "stringValue": "Since 1978, outdoor bronze statues commemorate the many ways women share their talents to bless the world."
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/21",
+      "fields": {
+        "description": {
+          "stringValue": "The unfinished boarding house (or hotel) Joseph Smith was directed to build in an 1841 revelation."
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "lng": {
+          "doubleValue": -91.3914
+        },
+        "id": {
+          "integerValue": "21"
+        },
+        "name": {
+          "stringValue": "The Nauvoo House"
+        },
+        "lat": {
+          "doubleValue": 40.5401
+        },
+        "address": {
+          "stringValue": "Water St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/nauvoo-house?lang=eng"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/e3c8acc7347911ed98b9eeeeac1ee454590418fc/full/!800,600/0/default"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/22",
+      "fields": {
+        "detailUrl": {
+          "stringValue": "https://local.churchofjesuschrist.org/en/us/il/nauvoo/380-north-durphy-street"
+        },
+        "address": {
+          "stringValue": "380 N Durphy St, Nauvoo, IL 62354"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/ff8a35da2ecb11ed9eaaeeeeac1e8f750ab10ea4/full/!800,600/0/default"
+        },
+        "type": {
+          "stringValue": "Meetinghouse"
+        },
+        "description": {
+          "stringValue": "Worship services for The Church of Jesus Christ of Latter-day Saints are held every Sunday. Visitors are always welcome."
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "id": {
+          "integerValue": "22"
+        },
+        "lat": {
+          "doubleValue": 40.5489
+        },
+        "lng": {
+          "doubleValue": -91.3803
+        },
+        "name": {
+          "stringValue": "Nauvoo Stake Center"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/23",
+      "fields": {
+        "name": {
+          "stringValue": "Nauvoo Illinois Temple"
+        },
+        "lng": {
+          "doubleValue": -91.3847
+        },
+        "id": {
+          "integerValue": "23"
+        },
+        "lat": {
+          "doubleValue": 40.55
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "description": {
+          "stringValue": "View the current temple information and appointment scheduling for the Nauvoo Illinois Temple."
+        },
+        "type": {
+          "stringValue": "Historic Temple"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/04d0f7f577ff089808b71b864e1f58b2e877a124/full/!800,600/0/default"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/temples/details/nauvoo-illinois-temple?lang=eng"
+        },
+        "address": {
+          "stringValue": "50 N Wells St, Nauvoo, IL 62354"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/24",
+      "fields": {
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/hyde-home?lang=eng"
+        },
+        "address": {
+          "stringValue": "690 S Hyde St, Nauvoo, IL 62354"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/515aa6c22fa811ed99d3eeeeac1e899c51ea9ace/full/!800,600/0/default"
+        },
+        "description": {
+          "stringValue": "Explore early Latter-day Saint mission history in the home of Orson and Marinda Hyde."
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "lat": {
+          "doubleValue": 40.543
+        },
+        "id": {
+          "integerValue": "24"
+        },
+        "lng": {
+          "doubleValue": -91.385
+        },
+        "name": {
+          "stringValue": "Orson and Marinda Hyde Home"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/25",
+      "fields": {
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/outdoor-stage?lang=eng"
+        },
+        "address": {
+          "stringValue": "Partridge St, Nauvoo, IL 62354"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/52697ead2fa811edbd89eeeeac1e07dc703963e7/full/!800,600/0/default"
+        },
+        "hasPerformances": {
+          "booleanValue": true
+        },
+        "description": {
+          "stringValue": "Experience musical theater performances in Nauvoo during the summer months."
+        },
+        "type": {
+          "stringValue": "Visitor Amenity"
+        },
+        "lng": {
+          "doubleValue": -91.387
+        },
+        "name": {
+          "stringValue": "Outdoor Stage"
+        },
+        "lat": {
+          "doubleValue": 40.543
+        },
+        "id": {
+          "integerValue": "25"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/26",
+      "fields": {
+        "lat": {
+          "doubleValue": 40.546
+        },
+        "id": {
+          "integerValue": "26"
+        },
+        "lng": {
+          "doubleValue": -91.385
+        },
+        "name": {
+          "stringValue": "Oxen Experience"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "description": {
+          "stringValue": "Meet oxen while learning about the significance of these hardworking animals to the Latter-day Saints in Nauvoo."
+        },
+        "type": {
+          "stringValue": "Visitor Amenity"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/7d8705c15ef611edab9eeeeeac1ec44c207d81ff/full/!800,600/0/default"
+        },
+        "address": {
+          "stringValue": "Broadway Street, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/oxen-experience?lang=eng"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/27",
+      "fields": {
+        "address": {
+          "stringValue": "260 Partridge St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/pageant-stage-area?lang=eng"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/6c2a49e37cbc11ed8fe0eeeeac1eaa0683762ef5/full/!800,600/0/default"
+        },
+        "hasPerformances": {
+          "booleanValue": true
+        },
+        "description": {
+          "stringValue": "Enjoy the summer performances of the Nauvoo and British pageants."
+        },
+        "type": {
+          "stringValue": "Visitor Amenity"
+        },
+        "lat": {
+          "doubleValue": 40.543
+        },
+        "name": {
+          "stringValue": "Pageant Stage Area"
+        },
+        "id": {
+          "integerValue": "27"
+        },
+        "lng": {
+          "doubleValue": -91.387
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/28",
+      "fields": {
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/parley-fire-pit?lang=eng"
+        },
+        "address": {
+          "stringValue": "Parley St, Nauvoo, IL 62354"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/1f529ac81ce111edb9fbeeeeac1ee8fab595c09c/full/!800,600/0/default"
+        },
+        "lng": {
+          "doubleValue": -91.395
+        },
+        "lat": {
+          "doubleValue": 40.543267
+        },
+        "id": {
+          "integerValue": "28"
+        },
+        "name": {
+          "stringValue": "Parley Fire Pit"
+        },
+        "type": {
+          "stringValue": "Visitor Amenity"
+        },
+        "description": {
+          "stringValue": "Enjoy a picnic or fire on the banks of the Mississippi River, the fire pit area at the west end of Parley Street."
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/29",
+      "fields": {
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/partridge-street-wood?lang=eng"
+        },
+        "address": {
+          "stringValue": "Partridge St, Nauvoo, IL 62354"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/1f0c42f51ce111eda3dfeeeeac1efa580b32ea57/full/!800,600/0/default"
+        },
+        "id": {
+          "integerValue": "29"
+        },
+        "name": {
+          "stringValue": "Partridge Street Wood"
+        },
+        "lat": {
+          "doubleValue": 40.543
+        },
+        "lng": {
+          "doubleValue": -91.387
+        },
+        "description": {
+          "stringValue": "Hold a group gathering in the shadow of the Nauvoo Temple in the wooded area on Partridge Street."
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "type": {
+          "stringValue": "Visitor Amenity"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/3",
+      "fields": {
+        "id": {
+          "integerValue": "3"
+        },
+        "lng": {
+          "doubleValue": -91.384
+        },
+        "lat": {
+          "doubleValue": 40.546
+        },
+        "name": {
+          "stringValue": "Calvin and Sally Pendleton Home and Schoolhouse"
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "description": {
+          "stringValue": "Learn about education in 1840s Nauvoo in the replica log home and schoolhouse of Calvin and Sally Pendleton."
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/51d1846e2fa811ed989ceeeeac1ec5236151fc4b/full/!800,600/0/default"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/pendleton-home-and-schoolhouse?lang=eng"
+        },
+        "address": {
+          "stringValue": "745 Kimball St, Nauvoo, IL 62354"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/30",
+      "fields": {
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/3ec2f1c2f02a11eebe0feeeeac1e7d76dc86d6ae/full/!800,600/0/default"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/partridge-street-wood-picnic-area?lang=eng"
+        },
+        "address": {
+          "stringValue": "Nauvoo Groves, Nauvoo, IL 62354"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "type": {
+          "stringValue": "Visitor Amenity"
+        },
+        "description": {
+          "stringValue": "Enjoy a picnic at the Partridge Street Wood."
+        },
+        "id": {
+          "integerValue": "30"
+        },
+        "name": {
+          "stringValue": "Partridge Street Wood Picnic Area"
+        },
+        "lat": {
+          "doubleValue": 40.543
+        },
+        "lng": {
+          "doubleValue": -91.387
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/31",
+      "fields": {
+        "lat": {
+          "doubleValue": 40.547
+        },
+        "lng": {
+          "doubleValue": -91.384
+        },
+        "id": {
+          "integerValue": "31"
+        },
+        "name": {
+          "stringValue": "Pastimes Pavilion"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "description": {
+          "stringValue": "Children of all ages can enjoy outdoor toys and games from the 1840s at the Pastimes Pavilion."
+        },
+        "type": {
+          "stringValue": "Visitor Amenity"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/4d752f282fa811edbd53eeeeac1edcc4e9aac83c/full/!800,600/0/default"
+        },
+        "address": {
+          "stringValue": "455 Main St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/pastimes-pavilion?lang=eng"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/32",
+      "fields": {
+        "address": {
+          "stringValue": "455 Main St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/pioneer-memorial-nauvoo?lang=eng"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/6bbf53127cbc11ed9aa9eeeeac1ebf51a577de9f/full/!800,600/0/default"
+        },
+        "lng": {
+          "doubleValue": -91.395
+        },
+        "lat": {
+          "doubleValue": 40.543267
+        },
+        "id": {
+          "integerValue": "32"
+        },
+        "name": {
+          "stringValue": "Pioneer Memorial and Exodus to Greatness"
+        },
+        "description": {
+          "stringValue": "Remember those who left Nauvoo for Utah and those that died along the way."
+        },
+        "type": {
+          "stringValue": "Monument"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/33",
+      "fields": {
+        "id": {
+          "integerValue": "33"
+        },
+        "lng": {
+          "doubleValue": -91.395
+        },
+        "name": {
+          "stringValue": "Pioneer Memorial Picnic Area"
+        },
+        "lat": {
+          "doubleValue": 40.543267
+        },
+        "type": {
+          "stringValue": "Visitor Amenity"
+        },
+        "description": {
+          "stringValue": "Enjoy a picnic nearby the Pioneer Memorial."
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/pioneer-memorial-picnic-area?lang=eng"
+        },
+        "address": {
+          "stringValue": "175 Water St, Nauvoo, IL 62354"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/3f7e5281f02a11ee97bbeeeeac1e16efbe1efb44/full/!800,600/0/default"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/34",
+      "fields": {
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/pioneer-pastimes-picnic-area?lang=eng"
+        },
+        "address": {
+          "stringValue": "Main St, Nauvoo, IL 62354"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/1c00b0a41ce111edad1aeeeeac1ef3e0970cd695/full/!800,600/0/default"
+        },
+        "lat": {
+          "doubleValue": 40.547
+        },
+        "lng": {
+          "doubleValue": -91.384
+        },
+        "name": {
+          "stringValue": "Pioneer Pastimes Picnic Area"
+        },
+        "id": {
+          "integerValue": "34"
+        },
+        "type": {
+          "stringValue": "Visitor Amenity"
+        },
+        "description": {
+          "stringValue": "Enjoy a picnic near the Pioneer Pastimes Pavilion."
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/35",
+      "fields": {
+        "address": {
+          "stringValue": "E Co Rd 2300, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/pioneer-saints-cemetery?lang=eng"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/a218a83393a83f9c2f818fc77f1d4bd14611ea8d/full/!800,600/0/default"
+        },
+        "description": {
+          "stringValue": "The Pioneer Saints Cemetery is a quiet, contemplative cemetery with headstones dating from the 1840s."
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "id": {
+          "integerValue": "35"
+        },
+        "name": {
+          "stringValue": "Pioneer Saints Cemetery"
+        },
+        "lat": {
+          "doubleValue": 40.536686
+        },
+        "lng": {
+          "doubleValue": -91.350606
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/36",
+      "fields": {
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/red-brick-store?lang=eng"
+        },
+        "address": {
+          "stringValue": "Water St, Nauvoo, IL 62354"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/40a8d1252fa811edbe4ceeeeac1e13fe26209157/full/!800,600/0/default"
+        },
+        "name": {
+          "stringValue": "Red Brick Store"
+        },
+        "lng": {
+          "doubleValue": -91.3885
+        },
+        "lat": {
+          "doubleValue": 40.541
+        },
+        "id": {
+          "integerValue": "36"
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "description": {
+          "stringValue": "Now rebuilt, this building was not only a general store, but also a civic and religious gathering place."
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/37",
+      "fields": {
+        "address": {
+          "stringValue": "685 Main St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/riser-boot-and-shoe-shop?lang=eng"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/44b35cec2fa811ed8af4eeeeac1e443cd1b845dd/full/!800,600/0/default"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "description": {
+          "stringValue": "Learn more about George and Christiana Riser and how they contributed to the community in Nauvoo."
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "lng": {
+          "doubleValue": -91.384
+        },
+        "name": {
+          "stringValue": "George and Christiana Riser Home and Boot Shop"
+        },
+        "id": {
+          "integerValue": "37"
+        },
+        "lat": {
+          "doubleValue": 40.546
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/38",
+      "fields": {
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "description": {
+          "stringValue": "Visit the bakery of Lucius and Lury Scovil and learn how they contributed to building of Nauvoo."
+        },
+        "id": {
+          "integerValue": "38"
+        },
+        "lng": {
+          "doubleValue": -91.391791
+        },
+        "name": {
+          "stringValue": "Scovil Bakery"
+        },
+        "lat": {
+          "doubleValue": 40.547139
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/scovil-bakery?lang=eng"
+        },
+        "address": {
+          "stringValue": "325 Main St, Nauvoo, IL 62354"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/44a357572fa811ed96deeeeeac1eb46cef707b19/full/!800,600/0/default"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/39",
+      "fields": {
+        "hasPerformances": {
+          "booleanValue": true
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "description": {
+          "stringValue": "The reconstructed Seventies Hall in Historic Nauvoo allows visitors to learn about the gathering of the Saints for worship and instruction."
+        },
+        "name": {
+          "stringValue": "Seventies Hall"
+        },
+        "lng": {
+          "doubleValue": -91.391717
+        },
+        "id": {
+          "integerValue": "39"
+        },
+        "lat": {
+          "doubleValue": 40.547367
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/seventies-hall?lang=eng"
+        },
+        "address": {
+          "stringValue": "505 Parley St, Nauvoo, IL 62354"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/44abbbcd2fa811ed82c5eeeeac1e2c288e991ac4/full/!800,600/0/default"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/4",
+      "fields": {
+        "name": {
+          "stringValue": "Carriage Depot"
+        },
+        "lng": {
+          "doubleValue": -91.3825
+        },
+        "lat": {
+          "doubleValue": 40.5475
+        },
+        "id": {
+          "integerValue": "4"
+        },
+        "description": {
+          "stringValue": "Hear stories about Nauvoo while riding on a horse-drawn carriage through the scenic landscape. Sleigh rides are available during winter months."
+        },
+        "type": {
+          "stringValue": "Visitor Amenity"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/4089142b2fa811edba73eeeeac1ef837953f5797/full/!800,600/0/default"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/carriage-depot?lang=eng"
+        },
+        "address": {
+          "stringValue": "290 Main St, Nauvoo, IL 62354"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/40",
+      "fields": {
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/ede07212347911ed8fa2eeeeac1ef2e94ff05857/full/!800,600/0/default"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/smith-family-cemetery?lang=eng"
+        },
+        "address": {
+          "stringValue": "Water St, Nauvoo, IL 62354"
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "description": {
+          "stringValue": "The burial place of Joseph and Emma Smith, Hyrum Smith, Joseph Smith Sr., Lucy Mack Smith, and several other members of the Smith family."
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "name": {
+          "stringValue": "Smith Family Cemetery"
+        },
+        "lat": {
+          "doubleValue": 40.5405
+        },
+        "lng": {
+          "doubleValue": -91.3895
+        },
+        "id": {
+          "integerValue": "40"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/41",
+      "fields": {
+        "id": {
+          "integerValue": "41"
+        },
+        "lng": {
+          "doubleValue": -91.3914
+        },
+        "name": {
+          "stringValue": "Smith Family Homestead"
+        },
+        "lat": {
+          "doubleValue": 40.5401
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "description": {
+          "stringValue": "The first Nauvoo house of the Joseph and Emma Smith family was a place of protection, revelation, and healing."
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/cb25df5a33ec11ef8bc0eeeeac1e56a549d097be/full/!800,600/0/default"
+        },
+        "address": {
+          "stringValue": "890 Main St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/smith-family-homestead?lang=eng"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/42",
+      "fields": {
+        "lat": {
+          "doubleValue": 40.547
+        },
+        "lng": {
+          "doubleValue": -91.384
+        },
+        "id": {
+          "integerValue": "42"
+        },
+        "name": {
+          "stringValue": "Stoddard Tin Shop"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "description": {
+          "stringValue": "In the Stoddard Tin Shop, take a look into the tin trade in Nauvoo."
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/460001282fa811ed96deeeeeac1eb46ca7c5449a/full/!800,600/0/default"
+        },
+        "address": {
+          "stringValue": "535 Main St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/stoddard-tin-shop?lang=eng"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/43",
+      "fields": {
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "description": {
+          "stringValue": "Learn about the Taylor family and how they contributed to the community in Nauvoo."
+        },
+        "name": {
+          "stringValue": "Taylor Home, Print Shop, and Post Office"
+        },
+        "id": {
+          "integerValue": "43"
+        },
+        "lat": {
+          "doubleValue": 40.547
+        },
+        "lng": {
+          "doubleValue": -91.384
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/44c3145c2fa811ed954beeeeac1e7f67d7260fbb/full/!800,600/0/default"
+        },
+        "address": {
+          "stringValue": "350 Main St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/taylor-home-print-shop-and-post-office?lang=eng"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/44",
+      "fields": {
+        "description": {
+          "stringValue": "Temple patrons and other guests are welcome to use this building as a waiting or changing area."
+        },
+        "type": {
+          "stringValue": "Visitor Amenity"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "name": {
+          "stringValue": "Temple Arrival Center"
+        },
+        "lng": {
+          "doubleValue": -91.383
+        },
+        "lat": {
+          "doubleValue": 40.551
+        },
+        "id": {
+          "integerValue": "44"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/temple-arrival-center?lang=eng"
+        },
+        "address": {
+          "stringValue": "1165 Knight St, Nauvoo, IL 62354"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/6c0e365b7cbc11ed9146eeeeac1e129254998f5f/full/!800,600/0/default"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/45",
+      "fields": {
+        "id": {
+          "integerValue": "45"
+        },
+        "name": {
+          "stringValue": "Temple Stones Pavilion"
+        },
+        "lat": {
+          "doubleValue": 40.551
+        },
+        "lng": {
+          "doubleValue": -91.383
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "description": {
+          "stringValue": "The Temple Stones Pavilion shows how the Saints cut limestone to realize the vision of the Nauvoo Temple in the 1840s."
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/4fbef81a2fa811edbd53eeeeac1edcc4a99979ba/full/!800,600/0/default"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/temple-stones-pavilion?lang=eng"
+        },
+        "address": {
+          "stringValue": "965 Young St, Nauvoo, IL 62354"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/46",
+      "fields": {
+        "description": {
+          "stringValue": "Learn the stories of Latter-Day Saint pioneers who made the difficult journey west to escape persecution."
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "lat": {
+          "doubleValue": 40.543267
+        },
+        "name": {
+          "stringValue": "Trail of Hope"
+        },
+        "lng": {
+          "doubleValue": -91.395
+        },
+        "id": {
+          "integerValue": "46"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/5e8f6d40967f3a3fcea968bef7babb440af2fc3d/full/!800,600/0/default"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/trail-of-hope?lang=eng"
+        },
+        "address": {
+          "stringValue": "505 Parley St, Nauvoo, IL 62354"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/47",
+      "fields": {
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/historic-nauvoo-visitors-center-picnic-area?lang=eng"
+        },
+        "address": {
+          "stringValue": "290 Main St, Nauvoo, IL 62354"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/3e909721f02a11eebe0feeeeac1e7d76a4bc8bcb/full/!800,600/0/default"
+        },
+        "type": {
+          "stringValue": "Visitor Amenity"
+        },
+        "description": {
+          "stringValue": "Enjoy a picnic nearby the Visitor Center."
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "lng": {
+          "doubleValue": -91.3825
+        },
+        "lat": {
+          "doubleValue": 40.5475
+        },
+        "id": {
+          "integerValue": "47"
+        },
+        "name": {
+          "stringValue": "Visitors' Center Picnic Area"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/48",
+      "fields": {
+        "description": {
+          "stringValue": "Meet a team of horses and take a ride through town as a missionary tour guide provides an overview of the physical setting of Nauvoo."
+        },
+        "type": {
+          "stringValue": "Wagon Depot"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "id": {
+          "integerValue": "48"
+        },
+        "name": {
+          "stringValue": "Wagon Depot"
+        },
+        "lat": {
+          "doubleValue": 40.546
+        },
+        "lng": {
+          "doubleValue": -91.387
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/wagon-depot?lang=eng"
+        },
+        "address": {
+          "stringValue": "Hotchkiss Street, Nauvoo, IL 62354"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/52fff2502fa811ed9f7ceeeeac1ec9861fb81919/full/!800,600/0/default"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/49",
+      "fields": {
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/44b1fd5a2fa811ed9a44eeeeac1e17b55fe591d9/full/!800,600/0/default"
+        },
+        "address": {
+          "stringValue": "585 Parley St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/webb-blacksmith-shop?lang=eng"
+        },
+        "description": {
+          "stringValue": "Learn of the important role the Webb brothers and their blacksmith shop played as the Saints prepared to move west."
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "lat": {
+          "doubleValue": 40.543
+        },
+        "id": {
+          "integerValue": "49"
+        },
+        "lng": {
+          "doubleValue": -91.392
+        },
+        "name": {
+          "stringValue": "Webb Blacksmith Shop"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/5",
+      "fields": {
+        "id": {
+          "integerValue": "5"
+        },
+        "lng": {
+          "doubleValue": -91.1378
+        },
+        "name": {
+          "stringValue": "Carthage Jail"
+        },
+        "lat": {
+          "doubleValue": 40.4153
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "description": {
+          "stringValue": "A solemn site of remembrance, this restored jail honors the lives and legacy of the Prophet Joseph Smith and his brother Hyrum."
+        },
+        "address": {
+          "stringValue": "307 Walnut St, Carthage, IL 62321"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/carthage-jail?lang=eng"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/21f228b6ef133ac7a543c68431d3bc8bfb560c88/full/!800,600/0/default"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/50",
+      "fields": {
+        "description": {
+          "stringValue": "A grove of trees replanted near the Nauvoo temple helps tell the story of Latter-day Saint worship in the 1840s."
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "id": {
+          "integerValue": "50"
+        },
+        "lng": {
+          "doubleValue": -91.387417
+        },
+        "lat": {
+          "doubleValue": 40.550933
+        },
+        "name": {
+          "stringValue": "West Grove"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/west-grove?lang=eng"
+        },
+        "address": {
+          "stringValue": "985 Knight St, Nauvoo, IL 62354"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/53cedb0f2fa811edbd89eeeeac1e07dcd49a1162/full/!800,600/0/default"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/51",
+      "fields": {
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/50e8f92f2fa811eda74eeeeeac1e710d3d5f8743/full/!800,600/0/default"
+        },
+        "address": {
+          "stringValue": "2983 N Durphy St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/woodruff-home?lang=eng"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "description": {
+          "stringValue": "Learn of the Woodruff family's faith as they served and supported Church leaders—including Wilford—in Nauvoo."
+        },
+        "id": {
+          "integerValue": "51"
+        },
+        "name": {
+          "stringValue": "Wilford and Phebe Woodruff Home"
+        },
+        "lat": {
+          "doubleValue": 40.5489
+        },
+        "lng": {
+          "doubleValue": -91.3803
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/52",
+      "fields": {
+        "name": {
+          "stringValue": "William and Caroline Weeks Home"
+        },
+        "lng": {
+          "doubleValue": -91.383
+        },
+        "id": {
+          "integerValue": "52"
+        },
+        "lat": {
+          "doubleValue": 40.551
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "description": {
+          "stringValue": "Understand the process of designing the Nauvoo Temple in the home of William Weeks, the temple's architect, and his wife, Caroline."
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/weeks-home?lang=eng"
+        },
+        "address": {
+          "stringValue": "965 Young St, Nauvoo, IL 62354"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/74fab7849ec3ba7f41ed6d89f111ee253ec9d179/full/!800,600/0/default"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/53",
+      "fields": {
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "description": {
+          "stringValue": "Learn about the many important revelations Joseph Smith received about the eternal life of humanity in the restored home of William and Esther Gheen."
+        },
+        "lng": {
+          "doubleValue": -91.383
+        },
+        "name": {
+          "stringValue": "William and Esther Gheen Home"
+        },
+        "id": {
+          "integerValue": "53"
+        },
+        "lat": {
+          "doubleValue": 40.551
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/50b650702fa811ed82c5eeeeac1e2c28459761a7/full/!800,600/0/default"
+        },
+        "address": {
+          "stringValue": "965 Young St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/gheen-home?lang=eng"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/6",
+      "fields": {
+        "description": {
+          "stringValue": "Guests who visit the historic jail begin their tour in the visitors' center where they view a short introductory film."
+        },
+        "type": {
+          "stringValue": "Visitors' Center"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "id": {
+          "integerValue": "6"
+        },
+        "name": {
+          "stringValue": "Carthage Jail Visitors' Center"
+        },
+        "lat": {
+          "doubleValue": 40.4153
+        },
+        "lng": {
+          "doubleValue": -91.1378
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/carthage-jail-visitors-center?lang=eng"
+        },
+        "address": {
+          "stringValue": "307 Walnut St, Carthage, IL 62321"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/43d01f01eb7411edb908eeeeac1e7d34a4a3116a/full/!800,600/0/default"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/7",
+      "fields": {
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/44b77b9d2fa811edaae6eeeeac1e25a4b6296978/full/!800,600/0/default"
+        },
+        "address": {
+          "stringValue": "350 Main St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/cultural-hall?lang=eng"
+        },
+        "id": {
+          "integerValue": "7"
+        },
+        "name": {
+          "stringValue": "Cultural Hall"
+        },
+        "lng": {
+          "doubleValue": -91.391717
+        },
+        "lat": {
+          "doubleValue": 40.547367
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "description": {
+          "stringValue": "The Cultural Hall became a hub of the Latter-day Saints' spiritual, cultural, educational, economic, and civic activities."
+        },
+        "hasPerformances": {
+          "booleanValue": true
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/8",
+      "fields": {
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/4970bde72fa811edbd53eeeeac1edcc405105b03/full/!800,600/0/default"
+        },
+        "address": {
+          "stringValue": "790 Hotchkiss St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/sessions-home?lang=eng"
+        },
+        "name": {
+          "stringValue": "David and Patty Sessions Home"
+        },
+        "lat": {
+          "doubleValue": 40.5456
+        },
+        "id": {
+          "integerValue": "8"
+        },
+        "lng": {
+          "doubleValue": -91.387
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "description": {
+          "stringValue": "Visit Patty Sessions's replica log home, and learn how she was an important midwife in the Nauvoo community."
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    },
+    {
+      "name": "projects/historic-nauvoo-app/databases/(default)/documents/locations/9",
+      "fields": {
+        "description": {
+          "stringValue": "In the home of Edward and Ann Hunter, learn how many Saints—like the Hunters—gave of their time and substance to help build the Nauvoo Temple."
+        },
+        "type": {
+          "stringValue": "Historic Site"
+        },
+        "hasPerformances": {
+          "booleanValue": false
+        },
+        "lat": {
+          "doubleValue": 40.550933
+        },
+        "lng": {
+          "doubleValue": -91.387417
+        },
+        "name": {
+          "stringValue": "Edward and Ann Hunter Home"
+        },
+        "id": {
+          "integerValue": "9"
+        },
+        "imageUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/imgs/50a11abe2fa811ed954beeeeac1e7f6796596378/full/!800,600/0/default"
+        },
+        "address": {
+          "stringValue": "985 Knight St, Nauvoo, IL 62354"
+        },
+        "detailUrl": {
+          "stringValue": "https://www.churchofjesuschrist.org/learn/locations/hunter-home?lang=eng"
+        }
+      },
+      "createTime": "2025-12-31T04:53:05.543012Z",
+      "updateTime": "2025-12-31T04:53:05.543012Z"
+    }
+  ]
+}

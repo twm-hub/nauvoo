@@ -35,3 +35,6 @@ ui-debug.log*
 
 # Optional eslint cache
 .eslintcache
+
+# firebase deploy cache
+.firebase/
