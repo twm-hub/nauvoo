@@ -142,3 +142,12 @@
 ion-refresher-content {
   --color: var(--nauvoo-brick);
 }
+
+/* The events list is designed for a phone held in one hand. On a wide screen
+   an uncropped photo would otherwise stretch to a metre across, so the column
+   is capped and centred rather than cropping the photos to fit. */
+.home-events-section {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}

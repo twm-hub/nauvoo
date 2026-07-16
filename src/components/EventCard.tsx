@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { IonCard, IonCardContent, IonIcon, IonText, IonImg } from '@ionic/react';
+import { IonCard, IonCardContent, IonIcon, IonText } from '@ionic/react';
 import {
   timeOutline,
   locationOutline,
@@ -63,8 +63,11 @@ const EventCard: React.FC<EventCardProps> = ({
       aria-expanded={expanded}
     >
       {matchedLocation?.imageUrl && (
-        <div className={`event-thumbnail${expanded ? ' event-thumbnail-full' : ''}`}>
-          <IonImg src={matchedLocation.imageUrl} alt={matchedLocation.name} />
+        <div className="event-thumbnail">
+          {/* A plain img, not IonImg: IonImg sizes its inner image to the
+              container's height, so a container of height:auto collapses to
+              nothing and the photo never appears. */}
+          <img src={matchedLocation.imageUrl} alt={matchedLocation.name} loading="lazy" />
         </div>
       )}
 

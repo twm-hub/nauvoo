@@ -19,12 +19,12 @@
   color: var(--nauvoo-iron-light);
 }
 
-.event-time {
+.event-card .event-time {
   display: flex;
   align-items: center;
   gap: 6px;
   color: var(--nauvoo-brick);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 600;
   margin-bottom: 6px;
 }
@@ -33,20 +33,20 @@
   font-size: 1rem;
 }
 
-.event-title {
+.event-card .event-title {
   font-family: var(--nauvoo-font-display);
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: var(--nauvoo-river-deep);
   margin: 0 0 8px 0;
   line-height: 1.3;
 }
 
-.event-location {
+.event-card .event-location {
   display: flex;
   align-items: flex-start;
   gap: 6px;
   color: var(--nauvoo-iron-light);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   margin-bottom: 8px;
 }
 
@@ -56,9 +56,9 @@
   margin-top: 2px;
 }
 
-.event-description {
+.event-card .event-description {
   font-family: var(--nauvoo-font-body);
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin: 0 0 8px 0;
 }
@@ -80,28 +80,18 @@
   border-radius: 2px;
 }
 
-/* Thumbnail styles */
+/* Thumbnail styles
+   The photo is shown whole. It used to be forced into a 140px strip with
+   object-fit: cover, which cut the middle out of every building. */
 .event-thumbnail {
   width: 100%;
-  height: 140px;
-  overflow: hidden;
+  line-height: 0;
 }
 
-.event-thumbnail ion-img {
+.event-thumbnail img {
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Expanded, the photo is shown whole rather than cropped to a strip. */
-.event-thumbnail-full {
   height: auto;
-  max-height: 60vh;
-}
-
-.event-thumbnail-full ion-img {
-  height: auto;
-  object-fit: contain;
 }
 
 /* Expanded card */
@@ -119,9 +109,9 @@
   margin-top: 0.5rem;
 }
 
-.event-description-full {
+.event-card .event-description-full {
   font-family: var(--nauvoo-font-body);
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
@@ -140,15 +130,15 @@
   border-top: 1px solid var(--nauvoo-limestone-warm);
 }
 
-.event-place-name {
+.event-card .event-place-name {
   font-family: var(--nauvoo-font-display);
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--nauvoo-river-deep);
   margin: 0 0 2px 0;
 }
 
-.event-place-address {
-  font-size: 0.85rem;
+.event-card .event-place-address {
+  font-size: 0.95rem;
   color: var(--nauvoo-iron-light);
   margin: 0 0 0.75rem 0;
 }
@@ -173,7 +163,7 @@
   border: 1px solid var(--nauvoo-brick);
   border-radius: 4px;
   font-family: var(--nauvoo-font-body);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 500;
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease;
