@@ -104,6 +104,37 @@ const isCarthage = (location: Location) =>
  */
 const FRAMING_RADIUS_M = 1500;
 
+/** Clears the header and filter bar at the top, the tab bar at the bottom. */
+const FRAME_PADDING = { top: 110, right: 50, bottom: 90, left: 50 };
+
+/**
+ * Frame the map on a set of sites.
+ *
+ * Used both for the opening view and the Carthage button, so the two can never
+ * drift apart.
+ */
+function frameOn(map: google.maps.Map, sites: Location[]): void {
+  if (!sites.length) return;
+  const bounds = new google.maps.LatLngBounds();
+  sites.forEach((s) => bounds.extend({ lat: s.lat, lng: s.lng }));
+  if (!bounds.isEmpty()) map.fitBounds(bounds, FRAME_PADDING);
+}
+
+/**
+ * The sites that shape the opening view: Nauvoo's historic district, without
+ * the one outlier that would shrink it.
+ */
+function districtSites(locations: Location[]): Location[] {
+  const nauvoo = locations.filter((l) => !isCarthage(l));
+  if (!nauvoo.length) return [];
+
+  const centre = {
+    lat: nauvoo.reduce((sum, l) => sum + l.lat, 0) / nauvoo.length,
+    lng: nauvoo.reduce((sum, l) => sum + l.lng, 0) / nauvoo.length,
+  };
+  return nauvoo.filter((l) => metresBetween(centre, l) <= FRAMING_RADIUS_M);
+}
+
 function metresBetween(
   a: { lat: number; lng: number },
   b: { lat: number; lng: number }
@@ -132,7 +163,9 @@ const GoogleMapContent: React.FC<GoogleMapContentProps> = ({ apiKey, locations }
   const history = useHistory();
   const [selectedLocation, setSelectedLocation] = useState<Location | null>(null);
   const [selectedTypes, setSelectedTypes] = useState<LocationType[]>([]);
-  const [showCarthage, setShowCarthage] = useState(false);
+  // Whether the view is pulled back far enough to take in Carthage. The pins
+  // themselves are always on the map; this only reframes.
+  const [viewingCarthage, setViewingCarthage] = useState(false);
   // Off by default: the map is for Historic Nauvoo's sites, and Google's shops
   // and hotels look just like our pins.
   const [showGooglePlaces, setShowGooglePlaces] = useState(false);
@@ -151,18 +184,28 @@ const GoogleMapContent: React.FC<GoogleMapContentProps> = ({ apiKey, locations }
   // Filter locations
   const filteredLocations = useMemo(() => {
     return locations.filter((location) => {
-      const matchesType =
-        selectedTypes.length === 0 || selectedTypes.includes(location.type);
-      if (isCarthage(location) && !showCarthage) return false;
-      return matchesType;
+      // Carthage is always pinned; the Carthage button reframes the view
+      // rather than hiding a pin nobody can see from Nauvoo anyway.
+      return selectedTypes.length === 0 || selectedTypes.includes(location.type);
     });
-  }, [locations, selectedTypes, showCarthage]);
+  }, [locations, selectedTypes]);
 
   const handleTypeToggle = (type: LocationType) => {
     setSelectedTypes((prev) =>
       prev.includes(type) ? prev.filter((t) => t !== type) : [...prev, type]
     );
   };
+
+  // Pull back far enough to take in Carthage, 25 miles away, and back again.
+  const handleCarthageToggle = useCallback(() => {
+    if (!mapRef) return;
+    const next = !viewingCarthage;
+    setViewingCarthage(next);
+    frameOn(
+      mapRef,
+      next ? districtSites(locations).concat(locations.filter(isCarthage)) : districtSites(locations)
+    );
+  }, [mapRef, viewingCarthage, locations]);
 
   const handleNavigate = useCallback((location: Location) => {
     const url = `https://www.google.com/maps/dir/?api=1&destination=${location.lat},${location.lng}`;
@@ -201,11 +244,11 @@ const GoogleMapContent: React.FC<GoogleMapContentProps> = ({ apiKey, locations }
         />
         <div className="carthage-toggle">
           <IonButton
-            fill={showCarthage ? 'solid' : 'outline'}
+            fill={viewingCarthage ? 'solid' : 'outline'}
             size="small"
-            onClick={() => setShowCarthage(!showCarthage)}
+            onClick={handleCarthageToggle}
           >
-            {showCarthage ? 'Hide' : 'Show'} Carthage (25 mi)
+            {viewingCarthage ? 'Back to Nauvoo' : 'Show Carthage (25 mi)'}
           </IonButton>
           <IonButton
             fill={showGooglePlaces ? 'solid' : 'outline'}
@@ -236,26 +279,9 @@ const GoogleMapContent: React.FC<GoogleMapContentProps> = ({ apiKey, locations }
             mapTypeId={satellite ? 'hybrid' : 'roadmap'}
             onLoad={(map) => {
               setMapRef(map);
-
               // Open framed on the historic district rather than at a fixed
-              // zoom, so it fills whatever screen it lands on -- most of these
-              // are phones. Padding clears the header and the tab bar.
-              const nauvoo = locations.filter((l) => !isCarthage(l));
-              if (!nauvoo.length) return;
-
-              const centre = {
-                lat: nauvoo.reduce((sum, l) => sum + l.lat, 0) / nauvoo.length,
-                lng: nauvoo.reduce((sum, l) => sum + l.lng, 0) / nauvoo.length,
-              };
-
-              const bounds = new google.maps.LatLngBounds();
-              nauvoo
-                .filter((l) => metresBetween(centre, l) <= FRAMING_RADIUS_M)
-                .forEach((l) => bounds.extend({ lat: l.lat, lng: l.lng }));
-
-              if (!bounds.isEmpty()) {
-                map.fitBounds(bounds, { top: 110, right: 50, bottom: 90, left: 50 });
-              }
+              // zoom, so it fills whatever screen it lands on.
+              frameOn(map, districtSites(locations));
             }}
             // Labels appear once zoomed in far enough to read them.
             onZoomChanged={() => {
@@ -313,6 +339,14 @@ const GoogleMapContent: React.FC<GoogleMapContentProps> = ({ apiKey, locations }
                 onCloseClick={() => setSelectedLocation(null)}
               >
                 <div className="map-info-window">
+                  {selectedLocation.imageUrl && (
+                    <img
+                      className="info-window-photo"
+                      src={selectedLocation.imageUrl}
+                      alt={selectedLocation.name}
+                      loading="lazy"
+                    />
+                  )}
                   <h3>{selectedLocation.name}</h3>
                   <span className="info-window-type">
                     {selectedLocation.type}
